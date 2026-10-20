@@ -1,0 +1,1196 @@
+[
+  {
+    "id": "demon",
+    "title": "Клинок, рассекающий демонов",
+    "english": "DEMON SLAYER",
+    "color": "#ed793b",
+    "type": "Аниме",
+    "cover": "assets/demon-cover.jpg",
+    "source": "https://anilist.co/manga/87216",
+    "characters": [
+      {
+        "id": "demon-126071",
+        "name": "Тандзиро Камадо",
+        "originalName": "Tanjirou Kamado",
+        "image": "assets/demon-126071.jpg",
+        "favorites": 18208,
+        "source": "https://anilist.co/character/126071"
+      },
+      {
+        "id": "demon-127518",
+        "name": "Нэдзуко Камадо",
+        "originalName": "Nezuko Kamado",
+        "image": "assets/demon-127518.jpg",
+        "favorites": 14794,
+        "source": "https://anilist.co/character/127518"
+      },
+      {
+        "id": "demon-129130",
+        "name": "Иноскэ Хасибира",
+        "originalName": "Inosuke Hashibira",
+        "image": "assets/demon-129130.jpg",
+        "favorites": 14742,
+        "source": "https://anilist.co/character/129130"
+      },
+      {
+        "id": "demon-129131",
+        "name": "Дзэницу Агацума",
+        "originalName": "Zenitsu Agatsuma",
+        "image": "assets/demon-129131.jpg",
+        "favorites": 13949,
+        "source": "https://anilist.co/character/129131"
+      },
+      {
+        "id": "demon-130050",
+        "name": "Гию Томиока",
+        "originalName": "Giyuu Tomioka",
+        "image": "assets/demon-130050.jpg",
+        "favorites": 12632,
+        "source": "https://anilist.co/character/130050"
+      },
+      {
+        "id": "demon-129133",
+        "name": "Кёдзюро Рэнгоку",
+        "originalName": "Kyoujurou Rengoku",
+        "image": "assets/demon-129133.jpg",
+        "favorites": 11554,
+        "source": "https://anilist.co/character/129133"
+      },
+      {
+        "id": "demon-136070",
+        "name": "Синобу Котё",
+        "originalName": "Shinobu Kochou",
+        "image": "assets/demon-136070.jpg",
+        "favorites": 9428,
+        "source": "https://anilist.co/character/136070"
+      },
+      {
+        "id": "demon-136071",
+        "name": "Тэнгэн Удзуй",
+        "originalName": "Tengen Uzui",
+        "image": "assets/demon-136071.jpg",
+        "favorites": 7992,
+        "source": "https://anilist.co/character/136071"
+      },
+      {
+        "id": "demon-136072",
+        "name": "Мицури Канродзи",
+        "originalName": "Mitsuri Kanroji",
+        "image": "assets/demon-136072.jpg",
+        "favorites": 6545,
+        "source": "https://anilist.co/character/136072"
+      },
+      {
+        "id": "demon-139038",
+        "name": "Канао Цуюри",
+        "originalName": "Kanao Tsuyuri",
+        "image": "assets/demon-139038.jpg",
+        "favorites": 5338,
+        "source": "https://anilist.co/character/139038"
+      },
+      {
+        "id": "demon-136069",
+        "name": "Муитиро Токито",
+        "originalName": "Muichirou Tokitou",
+        "image": "assets/demon-136069.jpg",
+        "favorites": 5095,
+        "source": "https://anilist.co/character/136069"
+      },
+      {
+        "id": "demon-141694",
+        "name": "Акадза",
+        "originalName": "Akaza",
+        "image": "assets/demon-141694.jpg",
+        "favorites": 4229,
+        "source": "https://anilist.co/character/141694"
+      },
+      {
+        "id": "demon-137777",
+        "name": "Обанай Игуро",
+        "originalName": "Obanai Iguro",
+        "image": "assets/demon-137777.jpg",
+        "favorites": 2925,
+        "source": "https://anilist.co/character/137777"
+      },
+      {
+        "id": "demon-137774",
+        "name": "Санэми Синадзугава",
+        "originalName": "Sanemi Shinazugawa",
+        "image": "assets/demon-137774.jpg",
+        "favorites": 2809,
+        "source": "https://anilist.co/character/137774"
+      },
+      {
+        "id": "demon-129132",
+        "name": "Мудзан Кибуцудзи",
+        "originalName": "Muzan Kibutsuji",
+        "image": "assets/demon-129132.jpg",
+        "favorites": 2154,
+        "source": "https://anilist.co/character/129132"
+      },
+      {
+        "id": "demon-137809",
+        "name": "Сабито",
+        "originalName": "Sabito",
+        "image": "assets/demon-137809.jpg",
+        "favorites": 2116,
+        "source": "https://anilist.co/character/137809"
+      },
+      {
+        "id": "demon-137776",
+        "name": "Гэнъя Синадзугава",
+        "originalName": "Genya Shinazugawa",
+        "image": "assets/demon-137776.jpg",
+        "favorites": 1815,
+        "source": "https://anilist.co/character/137776"
+      },
+      {
+        "id": "demon-137778",
+        "name": "Гёмэй Химэдзима",
+        "originalName": "Gyoumei Himejima",
+        "image": "assets/demon-137778.jpg",
+        "favorites": 1680,
+        "source": "https://anilist.co/character/137778"
+      },
+      {
+        "id": "demon-149220",
+        "name": "Ёриичи Цугикуни",
+        "originalName": "Yoriichi Tsugikuni",
+        "image": "assets/demon-149220.jpg",
+        "favorites": 1260,
+        "source": "https://anilist.co/character/149220"
+      },
+      {
+        "id": "demon-144591",
+        "name": "Дома",
+        "originalName": "Douma",
+        "image": "assets/demon-144591.jpg",
+        "favorites": 1244,
+        "source": "https://anilist.co/character/144591"
+      },
+      {
+        "id": "demon-141918",
+        "name": "Кокушибо",
+        "originalName": "Kokushibo",
+        "image": "assets/demon-141918.jpg",
+        "favorites": 1101,
+        "source": "https://anilist.co/character/141918"
+      },
+      {
+        "id": "demon-138847",
+        "name": "Тамаё",
+        "originalName": "Tamayo",
+        "image": "assets/demon-138847.jpg",
+        "favorites": 966,
+        "source": "https://anilist.co/character/138847"
+      },
+      {
+        "id": "demon-138990",
+        "name": "Хотару Хаганэдзука",
+        "originalName": "Hotaru Haganezuka",
+        "image": "assets/demon-138990.jpg",
+        "favorites": 938,
+        "source": "https://anilist.co/character/138990"
+      },
+      {
+        "id": "demon-139734",
+        "name": "Даки",
+        "originalName": "Daki",
+        "image": "assets/demon-139734.jpg",
+        "favorites": 922,
+        "source": "https://anilist.co/character/139734"
+      }
+    ]
+  },
+  {
+    "id": "bleach",
+    "title": "Блич",
+    "english": "BLEACH",
+    "color": "#8f84ed",
+    "type": "Аниме",
+    "cover": "assets/bleach-cover.jpg",
+    "source": "https://anilist.co/manga/30012",
+    "characters": [
+      {
+        "id": "bleach-5",
+        "name": "Ичиго Куросаки",
+        "originalName": "Ichigo Kurosaki",
+        "image": "assets/bleach-5.jpg",
+        "favorites": 14659,
+        "source": "https://anilist.co/character/5"
+      },
+      {
+        "id": "bleach-210",
+        "name": "Кисукэ Урахара",
+        "originalName": "Kisuke Urahara",
+        "image": "assets/bleach-210.jpg",
+        "favorites": 8388,
+        "source": "https://anilist.co/character/210"
+      },
+      {
+        "id": "bleach-6",
+        "name": "Рукия Кучики",
+        "originalName": "Rukia Kuchiki",
+        "image": "assets/bleach-6.jpg",
+        "favorites": 7445,
+        "source": "https://anilist.co/character/6"
+      },
+      {
+        "id": "bleach-908",
+        "name": "Ёруити Сихоин",
+        "originalName": "Yoruichi Shihouin",
+        "image": "assets/bleach-908.jpg",
+        "favorites": 7092,
+        "source": "https://anilist.co/character/908"
+      },
+      {
+        "id": "bleach-1086",
+        "name": "Сосукэ Айдзэн",
+        "originalName": "Sousuke Aizen",
+        "image": "assets/bleach-1086.jpg",
+        "favorites": 7067,
+        "source": "https://anilist.co/character/1086"
+      },
+      {
+        "id": "bleach-909",
+        "name": "Кэнпачи Дзараки",
+        "originalName": "Kenpachi Zaraki",
+        "image": "assets/bleach-909.jpg",
+        "favorites": 6186,
+        "source": "https://anilist.co/character/909"
+      },
+      {
+        "id": "bleach-1081",
+        "name": "Улькиорра Сифер",
+        "originalName": "Ulquiorra Cifer",
+        "image": "assets/bleach-1081.jpg",
+        "favorites": 4532,
+        "source": "https://anilist.co/character/1081"
+      },
+      {
+        "id": "bleach-1080",
+        "name": "Гриммджоу Джагерджак",
+        "originalName": "Grimmjow Jaegerjaquez",
+        "image": "assets/bleach-1080.jpg",
+        "favorites": 4286,
+        "source": "https://anilist.co/character/1080"
+      },
+      {
+        "id": "bleach-7",
+        "name": "Орихимэ Иноуэ",
+        "originalName": "Orihime Inoue",
+        "image": "assets/bleach-7.jpg",
+        "favorites": 3747,
+        "source": "https://anilist.co/character/7"
+      },
+      {
+        "id": "bleach-245",
+        "name": "Тосиро Хицугая",
+        "originalName": "Toushirou Hitsugaya",
+        "image": "assets/bleach-245.jpg",
+        "favorites": 3691,
+        "source": "https://anilist.co/character/245"
+      },
+      {
+        "id": "bleach-907",
+        "name": "Бякуя Кучики",
+        "originalName": "Byakuya Kuchiki",
+        "image": "assets/bleach-907.jpg",
+        "favorites": 3381,
+        "source": "https://anilist.co/character/907"
+      },
+      {
+        "id": "bleach-1088",
+        "name": "Сюнсуй Кёраку",
+        "originalName": "Jirou Sakuranosuke Shunsui Kyouraku",
+        "image": "assets/bleach-1088.jpg",
+        "favorites": 3192,
+        "source": "https://anilist.co/character/1088"
+      },
+      {
+        "id": "bleach-1084",
+        "name": "Синдзи Хирако",
+        "originalName": "Shinji Hirako",
+        "image": "assets/bleach-1084.jpg",
+        "favorites": 2539,
+        "source": "https://anilist.co/character/1084"
+      },
+      {
+        "id": "bleach-1087",
+        "name": "Гин Ичимару",
+        "originalName": "Gin Ichimaru",
+        "image": "assets/bleach-1087.jpg",
+        "favorites": 2205,
+        "source": "https://anilist.co/character/1087"
+      },
+      {
+        "id": "bleach-906",
+        "name": "Рэндзи Абарай",
+        "originalName": "Renji Abarai",
+        "image": "assets/bleach-906.jpg",
+        "favorites": 1902,
+        "source": "https://anilist.co/character/906"
+      },
+      {
+        "id": "bleach-564",
+        "name": "Урю Исида",
+        "originalName": "Uryuu Ishida",
+        "image": "assets/bleach-564.jpg",
+        "favorites": 1814,
+        "source": "https://anilist.co/character/564"
+      },
+      {
+        "id": "bleach-904",
+        "name": "Рангику Мацумото",
+        "originalName": "Rangiku Matsumoto",
+        "image": "assets/bleach-904.jpg",
+        "favorites": 1770,
+        "source": "https://anilist.co/character/904"
+      },
+      {
+        "id": "bleach-4730",
+        "name": "Неллиэль Ту Одершванк",
+        "originalName": "Nelliel Tu Oderschvank",
+        "image": "assets/bleach-4730.jpg",
+        "favorites": 1770,
+        "source": "https://anilist.co/character/4730"
+      },
+      {
+        "id": "bleach-905",
+        "name": "Сой Фон",
+        "originalName": "Soi Fon",
+        "image": "assets/bleach-905.jpg",
+        "favorites": 1738,
+        "source": "https://anilist.co/character/905"
+      },
+      {
+        "id": "bleach-575",
+        "name": "Ясутора Садо",
+        "originalName": "Yasutora Sado",
+        "image": "assets/bleach-575.jpg",
+        "favorites": 1564,
+        "source": "https://anilist.co/character/575"
+      },
+      {
+        "id": "bleach-3845",
+        "name": "Рэцу Унохана",
+        "originalName": "Retsu Unohana",
+        "image": "assets/bleach-3845.jpg",
+        "favorites": 1407,
+        "source": "https://anilist.co/character/3845"
+      },
+      {
+        "id": "bleach-1168",
+        "name": "Маюри Куроцучи",
+        "originalName": "Mayuri Kurotsuchi",
+        "image": "assets/bleach-1168.jpg",
+        "favorites": 1368,
+        "source": "https://anilist.co/character/1168"
+      },
+      {
+        "id": "bleach-911",
+        "name": "Дзангэцу",
+        "originalName": "Zangetsu",
+        "image": "assets/bleach-911.jpg",
+        "favorites": 1090,
+        "source": "https://anilist.co/character/911"
+      },
+      {
+        "id": "bleach-1095",
+        "name": "Сюхэй Хисаги",
+        "originalName": "Shuuhei Hisagi",
+        "image": "assets/bleach-1095.jpg",
+        "favorites": 940,
+        "source": "https://anilist.co/character/1095"
+      }
+    ]
+  },
+  {
+    "id": "hero",
+    "title": "Моя геройская академия",
+    "english": "MY HERO ACADEMIA",
+    "color": "#7cb893",
+    "type": "Аниме",
+    "cover": "assets/hero-cover.jpg",
+    "source": "https://anilist.co/manga/85486",
+    "characters": [
+      {
+        "id": "hero-89220",
+        "name": "Сёто Тодороки",
+        "originalName": "Shouto Todoroki",
+        "image": "assets/hero-89220.jpg",
+        "favorites": 17095,
+        "source": "https://anilist.co/character/89220"
+      },
+      {
+        "id": "hero-88892",
+        "name": "Кацуки Бакуго",
+        "originalName": "Katsuki Bakugou",
+        "image": "assets/hero-88892.jpg",
+        "favorites": 16546,
+        "source": "https://anilist.co/character/88892"
+      },
+      {
+        "id": "hero-89028",
+        "name": "Идзуку Мидория",
+        "originalName": "Izuku Midoriya",
+        "image": "assets/hero-89028.jpg",
+        "favorites": 14213,
+        "source": "https://anilist.co/character/89028"
+      },
+      {
+        "id": "hero-89225",
+        "name": "Сёта Айдзава",
+        "originalName": "Shouta Aizawa",
+        "image": "assets/hero-89225.jpg",
+        "favorites": 8880,
+        "source": "https://anilist.co/character/89225"
+      },
+      {
+        "id": "hero-89224",
+        "name": "Всемогущий",
+        "originalName": "Toshinori Yagi",
+        "image": "assets/hero-89224.jpg",
+        "favorites": 6924,
+        "source": "https://anilist.co/character/89224"
+      },
+      {
+        "id": "hero-89243",
+        "name": "Эйдзиро Кирисима",
+        "originalName": "Eijirou Kirishima",
+        "image": "assets/hero-89243.jpg",
+        "favorites": 6595,
+        "source": "https://anilist.co/character/89243"
+      },
+      {
+        "id": "hero-125619",
+        "name": "Химико Тога",
+        "originalName": "Himiko Toga",
+        "image": "assets/hero-125619.jpg",
+        "favorites": 6168,
+        "source": "https://anilist.co/character/125619"
+      },
+      {
+        "id": "hero-126378",
+        "name": "Даби",
+        "originalName": "Dabi",
+        "image": "assets/hero-126378.jpg",
+        "favorites": 5598,
+        "source": "https://anilist.co/character/126378"
+      },
+      {
+        "id": "hero-89221",
+        "name": "Очако Урарака",
+        "originalName": "Ochako Uraraka",
+        "image": "assets/hero-89221.jpg",
+        "favorites": 5580,
+        "source": "https://anilist.co/character/89221"
+      },
+      {
+        "id": "hero-89226",
+        "name": "Томура Сигараки",
+        "originalName": "Tomura Shigaraki",
+        "image": "assets/hero-89226.jpg",
+        "favorites": 5500,
+        "source": "https://anilist.co/character/89226"
+      },
+      {
+        "id": "hero-89249",
+        "name": "Дэнки Каминари",
+        "originalName": "Denki Kaminari",
+        "image": "assets/hero-89249.jpg",
+        "favorites": 4597,
+        "source": "https://anilist.co/character/89249"
+      },
+      {
+        "id": "hero-89223",
+        "name": "Цую Асуи",
+        "originalName": "Tsuyu Asui",
+        "image": "assets/hero-89223.jpg",
+        "favorites": 4266,
+        "source": "https://anilist.co/character/89223"
+      },
+      {
+        "id": "hero-128299",
+        "name": "Ястреб",
+        "originalName": "Keigo Takami",
+        "image": "assets/hero-128299.jpg",
+        "favorites": 4209,
+        "source": "https://anilist.co/character/128299"
+      },
+      {
+        "id": "hero-123527",
+        "name": "Мирио Тогата",
+        "originalName": "Mirio Togata",
+        "image": "assets/hero-123527.jpg",
+        "favorites": 4059,
+        "source": "https://anilist.co/character/123527"
+      },
+      {
+        "id": "hero-89897",
+        "name": "Кёка Дзиро",
+        "originalName": "Kyouka Jirou",
+        "image": "assets/hero-89897.jpg",
+        "favorites": 4025,
+        "source": "https://anilist.co/character/89897"
+      },
+      {
+        "id": "hero-125934",
+        "name": "Тамаки Амадзики",
+        "originalName": "Tamaki Amajiki",
+        "image": "assets/hero-125934.jpg",
+        "favorites": 3856,
+        "source": "https://anilist.co/character/125934"
+      },
+      {
+        "id": "hero-89898",
+        "name": "Фумикагэ Токоями",
+        "originalName": "Fumikage Tokoyami",
+        "image": "assets/hero-89898.jpg",
+        "favorites": 3552,
+        "source": "https://anilist.co/character/89898"
+      },
+      {
+        "id": "hero-89241",
+        "name": "Момо Яоёродзу",
+        "originalName": "Momo Yaoyorozu",
+        "image": "assets/hero-89241.jpg",
+        "favorites": 3456,
+        "source": "https://anilist.co/character/89241"
+      },
+      {
+        "id": "hero-89242",
+        "name": "Хитоси Синсо",
+        "originalName": "Hitoshi Shinsou",
+        "image": "assets/hero-89242.jpg",
+        "favorites": 2732,
+        "source": "https://anilist.co/character/89242"
+      },
+      {
+        "id": "hero-148985",
+        "name": "Мирко",
+        "originalName": "Rumi Usagiyama",
+        "image": "assets/hero-148985.jpg",
+        "favorites": 2493,
+        "source": "https://anilist.co/character/148985"
+      },
+      {
+        "id": "hero-89247",
+        "name": "Мина Асидо",
+        "originalName": "Mina Ashido",
+        "image": "assets/hero-89247.jpg",
+        "favorites": 2475,
+        "source": "https://anilist.co/character/89247"
+      },
+      {
+        "id": "hero-126093",
+        "name": "Эри",
+        "originalName": "Eri",
+        "image": "assets/hero-126093.jpg",
+        "favorites": 2076,
+        "source": "https://anilist.co/character/126093"
+      },
+      {
+        "id": "hero-89589",
+        "name": "Дважды",
+        "originalName": "Jin Bubaigawara",
+        "image": "assets/hero-89589.jpg",
+        "favorites": 2032,
+        "source": "https://anilist.co/character/89589"
+      },
+      {
+        "id": "hero-89222",
+        "name": "Тэнъя Иида",
+        "originalName": "Tenya Iida",
+        "image": "assets/hero-89222.jpg",
+        "favorites": 1937,
+        "source": "https://anilist.co/character/89222"
+      }
+    ]
+  },
+  {
+    "id": "titan",
+    "title": "Атака титанов",
+    "english": "ATTACK ON TITAN",
+    "color": "#c5a176",
+    "type": "Аниме",
+    "cover": "assets/titan-cover.jpg",
+    "source": "https://anilist.co/manga/53390",
+    "characters": [
+      {
+        "id": "titan-45627",
+        "name": "Леви Аккерман",
+        "originalName": "Levi",
+        "image": "assets/titan-45627.jpg",
+        "favorites": 38866,
+        "source": "https://anilist.co/character/45627"
+      },
+      {
+        "id": "titan-40882",
+        "name": "Эрен Йегер",
+        "originalName": "Eren Yeager",
+        "image": "assets/titan-40882.jpg",
+        "favorites": 32147,
+        "source": "https://anilist.co/character/40882"
+      },
+      {
+        "id": "titan-40881",
+        "name": "Микаса Аккерман",
+        "originalName": "Mikasa Ackerman",
+        "image": "assets/titan-40881.jpg",
+        "favorites": 25933,
+        "source": "https://anilist.co/character/40881"
+      },
+      {
+        "id": "titan-46494",
+        "name": "Армин Арлерт",
+        "originalName": "Armin Arlert",
+        "image": "assets/titan-46494.jpg",
+        "favorites": 14330,
+        "source": "https://anilist.co/character/46494"
+      },
+      {
+        "id": "titan-71121",
+        "name": "Ханджи Зоэ",
+        "originalName": "Hange Zoe",
+        "image": "assets/titan-71121.jpg",
+        "favorites": 14012,
+        "source": "https://anilist.co/character/71121"
+      },
+      {
+        "id": "titan-46496",
+        "name": "Эрвин Смит",
+        "originalName": "Erwin Smith",
+        "image": "assets/titan-46496.jpg",
+        "favorites": 13005,
+        "source": "https://anilist.co/character/46496"
+      },
+      {
+        "id": "titan-125659",
+        "name": "Габи Браун",
+        "originalName": "Gabi Braun",
+        "image": "assets/titan-125659.jpg",
+        "favorites": 9606,
+        "source": "https://anilist.co/character/125659"
+      },
+      {
+        "id": "titan-45887",
+        "name": "Саша Браус",
+        "originalName": "Sasha Blouse",
+        "image": "assets/titan-45887.jpg",
+        "favorites": 8250,
+        "source": "https://anilist.co/character/45887"
+      },
+      {
+        "id": "titan-46484",
+        "name": "Райнер Браун",
+        "originalName": "Reiner Braun",
+        "image": "assets/titan-46484.jpg",
+        "favorites": 7774,
+        "source": "https://anilist.co/character/46484"
+      },
+      {
+        "id": "titan-46498",
+        "name": "Жан Кирштайн",
+        "originalName": "Jean Kirstein",
+        "image": "assets/titan-46498.jpg",
+        "favorites": 6326,
+        "source": "https://anilist.co/character/46498"
+      },
+      {
+        "id": "titan-46490",
+        "name": "Энни Леонхарт",
+        "originalName": "Annie Leonhart",
+        "image": "assets/titan-46490.jpg",
+        "favorites": 4879,
+        "source": "https://anilist.co/character/46490"
+      },
+      {
+        "id": "titan-62481",
+        "name": "Хистория Рейсс",
+        "originalName": "Krista Lenz",
+        "image": "assets/titan-62481.jpg",
+        "favorites": 3771,
+        "source": "https://anilist.co/character/62481"
+      },
+      {
+        "id": "titan-125661",
+        "name": "Зик Йегер",
+        "originalName": "Zeke",
+        "image": "assets/titan-125661.jpg",
+        "favorites": 3465,
+        "source": "https://anilist.co/character/125661"
+      },
+      {
+        "id": "titan-125603",
+        "name": "Пик Фингер",
+        "originalName": "Pieck Finger",
+        "image": "assets/titan-125603.jpg",
+        "favorites": 3316,
+        "source": "https://anilist.co/character/125603"
+      },
+      {
+        "id": "titan-71479",
+        "name": "Имир",
+        "originalName": "Ymir",
+        "image": "assets/titan-71479.jpg",
+        "favorites": 3269,
+        "source": "https://anilist.co/character/71479"
+      },
+      {
+        "id": "titan-46486",
+        "name": "Конни Спрингер",
+        "originalName": "Connie Springer",
+        "image": "assets/titan-46486.jpg",
+        "favorites": 2356,
+        "source": "https://anilist.co/character/46486"
+      },
+      {
+        "id": "titan-125660",
+        "name": "Фалько Грайс",
+        "originalName": "Falco Grice",
+        "image": "assets/titan-125660.jpg",
+        "favorites": 1082,
+        "source": "https://anilist.co/character/125660"
+      },
+      {
+        "id": "titan-133216",
+        "name": "Елена",
+        "originalName": "Yelena",
+        "image": "assets/titan-133216.jpg",
+        "favorites": 883,
+        "source": "https://anilist.co/character/133216"
+      },
+      {
+        "id": "titan-127703",
+        "name": "Флок Форстер",
+        "originalName": "Floch Forster",
+        "image": "assets/titan-127703.jpg",
+        "favorites": 799,
+        "source": "https://anilist.co/character/127703"
+      },
+      {
+        "id": "titan-46488",
+        "name": "Бертольт Гувер",
+        "originalName": "Bertolt Hoover",
+        "image": "assets/titan-46488.jpg",
+        "favorites": 776,
+        "source": "https://anilist.co/character/46488"
+      },
+      {
+        "id": "titan-127443",
+        "name": "Кенни Аккерман",
+        "originalName": "Kenny Ackerman",
+        "image": "assets/titan-127443.jpg",
+        "favorites": 665,
+        "source": "https://anilist.co/character/127443"
+      },
+      {
+        "id": "titan-62485",
+        "name": "Дот Пиксис",
+        "originalName": "Dot Pixis",
+        "image": "assets/titan-62485.jpg",
+        "favorites": 648,
+        "source": "https://anilist.co/character/62485"
+      },
+      {
+        "id": "titan-62501",
+        "name": "Петра Рал",
+        "originalName": "Petra Ral",
+        "image": "assets/titan-62501.jpg",
+        "favorites": 585,
+        "source": "https://anilist.co/character/62501"
+      },
+      {
+        "id": "titan-62477",
+        "name": "Гриша Йегер",
+        "originalName": "Grisha Yeager",
+        "image": "assets/titan-62477.jpg",
+        "favorites": 568,
+        "source": "https://anilist.co/character/62477"
+      }
+    ]
+  },
+  {
+    "id": "thrones",
+    "title": "Игра престолов",
+    "english": "GAME OF THRONES",
+    "color": "#88a7bf",
+    "type": "Сериал",
+    "cover": "assets/thrones-cover.jpg",
+    "source": "https://www.tvmaze.com/shows/82/game-of-thrones",
+    "characters": [
+      {
+        "id": "thrones-15607",
+        "name": "Джон Сноу",
+        "originalName": "Jon Snow",
+        "image": "assets/thrones-15607.jpg",
+        "source": "https://www.tvmaze.com/characters/15607/game-of-thrones-jon-snow"
+      },
+      {
+        "id": "thrones-15611",
+        "name": "Дейенерис Таргариен",
+        "originalName": "Daenerys Targaryen",
+        "image": "assets/thrones-15611.jpg",
+        "source": "https://www.tvmaze.com/characters/15611/game-of-thrones-daenerys-targaryen"
+      },
+      {
+        "id": "thrones-15604",
+        "name": "Тирион Ланнистер",
+        "originalName": "Tyrion Lannister",
+        "image": "assets/thrones-15604.jpg",
+        "source": "https://www.tvmaze.com/characters/15604/game-of-thrones-tyrion-lannister"
+      },
+      {
+        "id": "thrones-15613",
+        "name": "Арья Старк",
+        "originalName": "Arya Stark",
+        "image": "assets/thrones-15613.jpg",
+        "source": "https://www.tvmaze.com/characters/15613/game-of-thrones-arya-stark"
+      },
+      {
+        "id": "thrones-15608",
+        "name": "Серсея Ланнистер",
+        "originalName": "Queen Cersei Lannister",
+        "image": "assets/thrones-15608.jpg",
+        "source": "https://www.tvmaze.com/characters/15608/game-of-thrones-queen-cersei-lannister"
+      },
+      {
+        "id": "thrones-15602",
+        "name": "Джейме Ланнистер",
+        "originalName": "Ser Jaime Lannister",
+        "image": "assets/thrones-15602.jpg",
+        "source": "https://www.tvmaze.com/characters/15602/game-of-thrones-ser-jaime-lannister"
+      },
+      {
+        "id": "thrones-15612",
+        "name": "Санса Старк",
+        "originalName": "Sansa Stark",
+        "image": "assets/thrones-15612.jpg",
+        "source": "https://www.tvmaze.com/characters/15612/game-of-thrones-sansa-stark"
+      },
+      {
+        "id": "thrones-15601",
+        "name": "Эддард Старк",
+        "originalName": "Lord Eddard Stark",
+        "image": "assets/thrones-15601.jpg",
+        "source": "https://www.tvmaze.com/characters/15601/game-of-thrones-lord-eddard-stark"
+      },
+      {
+        "id": "thrones-15614",
+        "name": "Бран Старк",
+        "originalName": "Bran Stark",
+        "image": "assets/thrones-15614.jpg",
+        "source": "https://www.tvmaze.com/characters/15614/game-of-thrones-bran-stark"
+      },
+      {
+        "id": "thrones-15603",
+        "name": "Сандор Клиган",
+        "originalName": "Sandor Clegane",
+        "image": "assets/thrones-15603.jpg",
+        "source": "https://www.tvmaze.com/characters/15603/game-of-thrones-sandor-clegane"
+      },
+      {
+        "id": "thrones-15615",
+        "name": "Петир Бейлиш",
+        "originalName": "Petyr \"Littlefinger\" Baelish",
+        "image": "assets/thrones-15615.jpg",
+        "source": "https://www.tvmaze.com/characters/15615/game-of-thrones-petyr-littlefinger-baelish"
+      },
+      {
+        "id": "thrones-15605",
+        "name": "Джоффри Баратеон",
+        "originalName": "Prince Joffrey Baratheon",
+        "image": "assets/thrones-15605.jpg",
+        "source": "https://www.tvmaze.com/characters/15605/game-of-thrones-prince-joffrey-baratheon"
+      },
+      {
+        "id": "thrones-15609",
+        "name": "Робб Старк",
+        "originalName": "Robb Stark",
+        "image": "assets/thrones-15609.jpg",
+        "source": "https://www.tvmaze.com/characters/15609/game-of-thrones-robb-stark"
+      },
+      {
+        "id": "thrones-15600",
+        "name": "Теон Грейджой",
+        "originalName": "Theon Greyjoy",
+        "image": "assets/thrones-15600.jpg",
+        "source": "https://www.tvmaze.com/characters/15600/game-of-thrones-theon-greyjoy"
+      },
+      {
+        "id": "thrones-15596",
+        "name": "Тайвин Ланнистер",
+        "originalName": "Lord Tywin Lannister",
+        "image": "assets/thrones-15596.jpg",
+        "source": "https://www.tvmaze.com/characters/15596/game-of-thrones-lord-tywin-lannister"
+      },
+      {
+        "id": "thrones-15618",
+        "name": "Бриенна Тарт",
+        "originalName": "Brienne of Tarth",
+        "image": "assets/thrones-15618.jpg",
+        "source": "https://www.tvmaze.com/characters/15618/game-of-thrones-brienne-of-tarth"
+      },
+      {
+        "id": "thrones-15625",
+        "name": "Давос Сиворт",
+        "originalName": "Davos Seaworth",
+        "image": "assets/thrones-15625.jpg",
+        "source": "https://www.tvmaze.com/characters/15625/game-of-thrones-davos-seaworth"
+      },
+      {
+        "id": "thrones-15623",
+        "name": "Сэмвелл Тарли",
+        "originalName": "Samwell Tarly",
+        "image": "assets/thrones-15623.jpg",
+        "source": "https://www.tvmaze.com/characters/15623/game-of-thrones-samwell-tarly"
+      },
+      {
+        "id": "thrones-15606",
+        "name": "Джорах Мормонт",
+        "originalName": "Ser Jorah Mormont",
+        "image": "assets/thrones-15606.jpg",
+        "source": "https://www.tvmaze.com/characters/15606/game-of-thrones-ser-jorah-mormont"
+      },
+      {
+        "id": "thrones-15619",
+        "name": "Рамси Болтон",
+        "originalName": "Ramsay Snow",
+        "image": "assets/thrones-15619.jpg",
+        "source": "https://www.tvmaze.com/characters/15619/game-of-thrones-ramsay-snow"
+      },
+      {
+        "id": "thrones-15597",
+        "name": "Маргери Тирелл",
+        "originalName": "Margaery Tyrell",
+        "image": "assets/thrones-15597.jpg",
+        "source": "https://www.tvmaze.com/characters/15597/game-of-thrones-margaery-tyrell"
+      },
+      {
+        "id": "thrones-15629",
+        "name": "Станнис Баратеон",
+        "originalName": "Stannis Baratheon",
+        "image": "assets/thrones-15629.jpg",
+        "source": "https://www.tvmaze.com/characters/15629/game-of-thrones-stannis-baratheon"
+      },
+      {
+        "id": "thrones-15617",
+        "name": "Варис",
+        "originalName": "Lord Varys",
+        "image": "assets/thrones-15617.jpg",
+        "source": "https://www.tvmaze.com/characters/15617/game-of-thrones-lord-varys"
+      },
+      {
+        "id": "thrones-15616",
+        "name": "Мелисандра",
+        "originalName": "Melisandre",
+        "image": "assets/thrones-15616.jpg",
+        "source": "https://www.tvmaze.com/characters/15616/game-of-thrones-melisandre"
+      }
+    ]
+  },
+  {
+    "id": "jujutsu",
+    "title": "Магическая битва",
+    "english": "JUJUTSU KAISEN",
+    "color": "#ac82d0",
+    "type": "Аниме",
+    "cover": "assets/jujutsu-cover.jpg",
+    "source": "https://anilist.co/manga/101517",
+    "characters": [
+      {
+        "id": "jujutsu-127691",
+        "name": "Сатору Годзё",
+        "originalName": "Satoru Gojou",
+        "image": "assets/jujutsu-127691.jpg",
+        "favorites": 39426,
+        "source": "https://anilist.co/character/127691"
+      },
+      {
+        "id": "jujutsu-127212",
+        "name": "Юдзи Итадори",
+        "originalName": "Yuuji Itadori",
+        "image": "assets/jujutsu-127212.jpg",
+        "favorites": 21293,
+        "source": "https://anilist.co/character/127212"
+      },
+      {
+        "id": "jujutsu-126635",
+        "name": "Мэгуми Фусигуро",
+        "originalName": "Megumi Fushiguro",
+        "image": "assets/jujutsu-126635.jpg",
+        "favorites": 17453,
+        "source": "https://anilist.co/character/126635"
+      },
+      {
+        "id": "jujutsu-133704",
+        "name": "Кэнто Нанами",
+        "originalName": "Kento Nanami",
+        "image": "assets/jujutsu-133704.jpg",
+        "favorites": 13710,
+        "source": "https://anilist.co/character/133704"
+      },
+      {
+        "id": "jujutsu-133700",
+        "name": "Нобара Кугисаки",
+        "originalName": "Nobara Kugisaki",
+        "image": "assets/jujutsu-133700.jpg",
+        "favorites": 13665,
+        "source": "https://anilist.co/character/133700"
+      },
+      {
+        "id": "jujutsu-134167",
+        "name": "Маки Дзэнин",
+        "originalName": "Maki Zenin",
+        "image": "assets/jujutsu-134167.jpg",
+        "favorites": 13035,
+        "source": "https://anilist.co/character/134167"
+      },
+      {
+        "id": "jujutsu-133701",
+        "name": "Рёмэн Сукуна",
+        "originalName": "Sukuna",
+        "image": "assets/jujutsu-133701.jpg",
+        "favorites": 11957,
+        "source": "https://anilist.co/character/133701"
+      },
+      {
+        "id": "jujutsu-129571",
+        "name": "Юта Оккоцу",
+        "originalName": "Yuuta Okkotsu",
+        "image": "assets/jujutsu-129571.jpg",
+        "favorites": 11651,
+        "source": "https://anilist.co/character/129571"
+      },
+      {
+        "id": "jujutsu-157115",
+        "name": "Тогэ Инумаки",
+        "originalName": "Toge Inumaki",
+        "image": "assets/jujutsu-157115.jpg",
+        "favorites": 9847,
+        "source": "https://anilist.co/character/157115"
+      },
+      {
+        "id": "jujutsu-133699",
+        "name": "Сугуру Гэто",
+        "originalName": "Suguru Getou",
+        "image": "assets/jujutsu-133699.jpg",
+        "favorites": 8205,
+        "source": "https://anilist.co/character/133699"
+      },
+      {
+        "id": "jujutsu-162722",
+        "name": "Тодзи Фусигуро",
+        "originalName": "Touji Fushiguro",
+        "image": "assets/jujutsu-162722.jpg",
+        "favorites": 7693,
+        "source": "https://anilist.co/character/162722"
+      },
+      {
+        "id": "jujutsu-137975",
+        "name": "Аой Тодо",
+        "originalName": "Aoi Toudou",
+        "image": "assets/jujutsu-137975.jpg",
+        "favorites": 7277,
+        "source": "https://anilist.co/character/137975"
+      },
+      {
+        "id": "jujutsu-157116",
+        "name": "Тёсо",
+        "originalName": "Chousou",
+        "image": "assets/jujutsu-157116.jpg",
+        "favorites": 6368,
+        "source": "https://anilist.co/character/157116"
+      },
+      {
+        "id": "jujutsu-133702",
+        "name": "Махито",
+        "originalName": "Mahito",
+        "image": "assets/jujutsu-133702.jpg",
+        "favorites": 2929,
+        "source": "https://anilist.co/character/133702"
+      },
+      {
+        "id": "jujutsu-156848",
+        "name": "Касуми Мива",
+        "originalName": "Kasumi Miwa",
+        "image": "assets/jujutsu-156848.jpg",
+        "favorites": 2850,
+        "source": "https://anilist.co/character/156848"
+      },
+      {
+        "id": "jujutsu-137974",
+        "name": "Панда",
+        "originalName": "Panda",
+        "image": "assets/jujutsu-137974.jpg",
+        "favorites": 2529,
+        "source": "https://anilist.co/character/137974"
+      },
+      {
+        "id": "jujutsu-248818",
+        "name": "Хироми Хигурума",
+        "originalName": "Hiromi Higuruma",
+        "image": "assets/jujutsu-248818.jpg",
+        "favorites": 1924,
+        "source": "https://anilist.co/character/248818"
+      },
+      {
+        "id": "jujutsu-158154",
+        "name": "Сёко Иэири",
+        "originalName": "Shouko Ieiri",
+        "image": "assets/jujutsu-158154.jpg",
+        "favorites": 1517,
+        "source": "https://anilist.co/character/158154"
+      },
+      {
+        "id": "jujutsu-197584",
+        "name": "Киндзи Хакари",
+        "originalName": "Kinji Hakari",
+        "image": "assets/jujutsu-197584.jpg",
+        "favorites": 1481,
+        "source": "https://anilist.co/character/197584"
+      },
+      {
+        "id": "jujutsu-157215",
+        "name": "Мэй Мэй",
+        "originalName": "Mei Mei",
+        "image": "assets/jujutsu-157215.jpg",
+        "favorites": 1260,
+        "source": "https://anilist.co/character/157215"
+      },
+      {
+        "id": "jujutsu-157214",
+        "name": "Дзюмпэй Ёсино",
+        "originalName": "Junpei Yoshino",
+        "image": "assets/jujutsu-157214.jpg",
+        "favorites": 1096,
+        "source": "https://anilist.co/character/157214"
+      },
+      {
+        "id": "jujutsu-157864",
+        "name": "Утахимэ Иори",
+        "originalName": "Utahime Iori",
+        "image": "assets/jujutsu-157864.jpg",
+        "favorites": 1050,
+        "source": "https://anilist.co/character/157864"
+      },
+      {
+        "id": "jujutsu-196502",
+        "name": "Юки Цукумо",
+        "originalName": "Yuki Tsukumo",
+        "image": "assets/jujutsu-196502.jpg",
+        "favorites": 996,
+        "source": "https://anilist.co/character/196502"
+      },
+      {
+        "id": "jujutsu-134168",
+        "name": "Май Дзэнин",
+        "originalName": "Mai Zenin",
+        "image": "assets/jujutsu-134168.jpg",
+        "favorites": 893,
+        "source": "https://anilist.co/character/134168"
+      }
+    ]
+  }
+]
