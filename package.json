@@ -1,0 +1,13 @@
+{
+  "name": "draft-arena",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Аукцион персонажей аниме и сериалов для двух игроков",
+  "scripts": {
+    "dev": "python3 -m http.server 4173 --directory dist",
+    "start": "python3 -m http.server 4173 --directory dist",
+    "test": "node --test tests/*.test.mjs",
+    "check": "node --check dist/app.js && node --check dist/game.js && node --test tests/*.test.mjs"
+  }
+}
