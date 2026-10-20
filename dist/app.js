@@ -95,7 +95,7 @@ function setup() {
   const topic = currentTopic();
   return `<main class="main setup-main">
     <section class="hero"><div><div class="eyebrow"><span class="tiny-star">✦</span> АУКЦИОН ПЕРСОНАЖЕЙ</div><h1>Твоя команда.<br>Твои <span>легенды.</span></h1><p>За каждого героя стоит побороться.<br class="mobile-only"> Кого заберёшь ты?</p></div>
-    <div class="hero-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="cent-stamp"><small>ВСЁ НАЧИНАЕТСЯ С</small><strong>01<span>¢</span></strong><span>ТВОЯ ПЕРВАЯ СТАВКА</span></div><div class="art-arrow">${icon("diagonal")}</div><span class="art-cross">✦</span></div></section>
+    <div class="hero-art" aria-hidden="true"><div class="hero-glow"></div><div class="hero-portraits">${topic.characters.slice(0,3).map((c,i) => `<div class="hero-portrait portrait-${i}"><img src="${c.image}" alt="" /><span>${esc(c.name)}</span></div>`).join("")}</div><div class="hero-chip"><span>✦</span> Твоя история начинается здесь</div></div></section>
     ${game && game.phase !== "finished" ? `<div class="resume-banner"><span>${icon("trophy")} У тебя есть незавершённая партия: ${esc(topics.find(t => t.id === game.topicId).title)}</span><button data-action="resume">Продолжить ${icon("arrow")}</button></div>` : ""}
     <div class="setup-layout"><section class="topics-section">
       <div class="section-head"><h2><span>01</span> Выбери вселенную</h2><div class="filters" aria-label="Фильтр тем">${[["all","Все"],["Аниме","Аниме"],["Сериал","Сериалы"]].map(([id,label]) => `<button data-action="filter" data-id="${id}" aria-pressed="${filter === id}" class="${filter === id ? "active" : ""}">${label}</button>`).join("")}</div></div>
@@ -105,12 +105,12 @@ function setup() {
     <aside class="settings"><div class="settings-title"><h2><span>02</span> Настрой игру</h2>${icon("users")}</div>
       <form id="setup-form" novalidate>
         <label class="field-label">ИГРОКИ <span>Лицом к лицу</span></label>
-        <div class="player-names">${form.names.map((name,i) => `<label class="name-field p${i}"><span>P${i+1}</span><input name="name${i}" aria-label="Имя игрока ${i+1}" maxlength="24" value="${esc(name)}" placeholder="Игрок ${i+1}" /></label>`).join("")}</div>
+        <div class="player-names">${form.names.map((name,i) => `<label class="name-field p${i}"><span>P${i+1}</span><input name="name${i}" aria-label="Имя игрока ${i+1}" maxlength="24" value="${esc(name)}" placeholder="Игрок ${i+1}" autocomplete="off" enterkeyhint="next" /></label>`).join("")}</div>
         <label class="field-label" for="budget">БЮДЖЕТ НА ИГРОКА <span>Одинаковый для обоих</span></label>
-        <div class="number-control"><button type="button" data-action="budget-step" data-value="-10" aria-label="Уменьшить бюджет">−</button><div><input id="budget" name="budget" inputmode="decimal" value="${esc(form.budget)}" aria-describedby="budget-note" /><span>$</span></div><button type="button" data-action="budget-step" data-value="10" aria-label="Увеличить бюджет">+</button></div>
+        <div class="number-control"><button type="button" data-action="budget-step" data-value="-10" aria-label="Уменьшить бюджет">−</button><div><input id="budget" name="budget" inputmode="decimal" enterkeyhint="done" value="${esc(form.budget)}" aria-describedby="budget-note" /><span>$</span></div><button type="button" data-action="budget-step" data-value="10" aria-label="Увеличить бюджет">+</button></div>
         <div class="field-note" id="budget-note">Игровые доллары. Минимальная ставка — 0,01 $.</div>
         <label class="field-label team-label" for="team-size">ПЕРСОНАЖЕЙ В КОМАНДЕ <span>От 1 до 12</span></label>
-        <div class="size-options">${[3,5,7,10].map(n => `<button type="button" data-action="size" data-value="${n}" class="${form.size === n ? "active" : ""}" aria-pressed="${form.size === n}">${n}</button>`).join("")}<input id="team-size" name="size" type="number" min="1" max="12" step="1" value="${form.size}" aria-label="Свой размер команды" /></div>
+        <div class="size-options">${[3,5,7,10].map(n => `<button type="button" data-action="size" data-value="${n}" class="${form.size === n ? "active" : ""}" aria-pressed="${form.size === n}">${n}</button>`).join("")}<input id="team-size" name="size" type="number" inputmode="numeric" enterkeyhint="done" min="1" max="12" step="1" value="${form.size}" aria-label="Свой размер команды" /></div>
         <div class="selected-summary"><span class="summary-icon">${icon("grid")}</span><div><strong>${topic.title}</strong><span><b id="total-slots">${form.size * 2}</b> из 24 героев попадут в команды</span></div></div>
         <button class="primary start-button" type="submit">Начать аукцион ${icon("arrow")}</button>
         <div class="settings-foot">${icon("users")} Два игрока на одном устройстве</div>
@@ -136,7 +136,7 @@ function playerPanel(p, i) {
   return `<section class="player-panel p${i} ${leading ? "leading" : ""}"><div class="player-heading"><span class="player-avatar">P${i+1}</span><div><small>ИГРОК ${i+1}</small><h2>${esc(p.name)}</h2></div><span class="player-state">${full ? icon("check") : leading ? "ЛИДИРУЕТ" : equal ? "РАВНО" : ""}</span></div>
     <div class="balance"><span>Остаток бюджета</span><strong>${money(p.balance)}</strong><div class="budget-track"><span style="width:${p.balance / game.budget * 100}%"></span></div></div>
     <div class="bid-status"><span>Текущая ставка</span><strong>${game.bids[i] ? money(game.bids[i]) : "—"}</strong></div>
-    <form class="bid-form" data-player="${i}" novalidate><label for="bid-${i}" class="sr-only">Ставка игрока ${i+1} в долларах</label><div class="bid-input-wrap"><input id="bid-${i}" inputmode="decimal" value="${(suggested / 100).toFixed(2)}" ${!active ? "disabled" : ""} /><span>$</span></div>
+    <form class="bid-form" data-player="${i}" novalidate><label for="bid-${i}" class="sr-only">Ставка игрока ${i+1} в долларах</label><div class="bid-input-wrap"><input id="bid-${i}" inputmode="decimal" enterkeyhint="done" autocomplete="off" value="${(suggested / 100).toFixed(2)}" ${!active ? "disabled" : ""} /><span>$</span></div>
     <div class="bid-quick">${[1,100,500].map(amount => `<button type="button" data-action="bid-add" data-player="${i}" data-value="${amount}" ${!active ? "disabled" : ""}>+${amount === 1 ? "0,01" : amount/100} $</button>`).join("")}<button type="button" data-action="bid-max" data-player="${i}" ${!active ? "disabled" : ""}>Макс.</button></div>
     <button class="bid-button" type="submit" ${!active ? "disabled" : ""}>${full ? "Команда собрана" : "Сделать ставку"} ${icon(full ? "check" : "arrow")}</button></form>
     <div class="team-head"><h3>Твоя команда</h3><span>${p.team.length} <b>/ ${game.size}</b></span></div>${teamSlots(p)}
@@ -156,6 +156,7 @@ function auction() {
       <p class="lot-hint">${sold ? "Герой занял своё место. Продолжим?" : game.bids[0] && game.bids[0] === game.bids[1] ? "Ставки равны — покупку решит суефа" : "Равная ставка? Решите спор в суефа."}</p></section>
       ${playerPanel(game.players[1],1)}</div>
     <div class="match-progress"><span>СОБИРАЕМ КОМАНДЫ</span><div><span style="width:${total/(game.size*2)*100}%"></span></div><strong>${total} / ${game.size*2}</strong><small>${storageAvailable ? "Прогресс сохраняется автоматически" : "Сохранение недоступно"}</small></div>
+    <div class="auction-dock" aria-label="Покупка персонажа"><div><span>${sold ? "Куплено за" : "Лучшая ставка"}</span><strong>${money(sold ? game.lastSale.price : Math.max(...game.bids))}</strong></div><button class="primary" data-action="${sold ? "next" : "buy"}" ${!sold && !game.bids.some(Boolean) ? "disabled" : ""}>${sold ? (isComplete(game) ? "Команды" : "Следующий") : "Купить"} ${icon(sold ? "arrow" : "check")}</button></div>
   </main>`;
 }
 function results() {
@@ -166,6 +167,7 @@ function results() {
   </main>`;
 }
 function render() {
+  document.body.dataset.screen = screen;
   $("#app").innerHTML = header() + (screen === "setup" ? setup() : screen === "results" ? results() : auction()) + footer();
 }
 
@@ -284,7 +286,14 @@ document.addEventListener("click", event => {
       case "bid-max": $(`#bid-${player}`).value = (maxBid(game,Number(player))/100).toFixed(2); break;
       case "buy": if (outcome(game) === "tie") {rps = {choices:[],revealed:false}; showRps();} else completeSale(); break;
       case "skip": skipCharacter(game); persist(); render(); beep(); break;
-      case "next": nextRound(game); screen = game.phase === "finished" ? "results" : "auction"; persist(); render(); beep(); break;
+      case "next":
+        nextRound(game); screen = game.phase === "finished" ? "results" : "auction"; persist(); render(); beep();
+        if (window.matchMedia("(max-width:760px)").matches) {
+          const behavior = window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth";
+          if (screen === "results") window.scrollTo({top:0,behavior});
+          else $(".character-card")?.scrollIntoView({block:"start",behavior});
+        }
+        break;
       case "rps-choice":
         rps.choices.push(value); rps.revealed = rps.choices.length === 2;
         if (rps.revealed && rpsWinner(...rps.choices) !== "tie") {
