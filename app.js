@@ -1,4 +1,5 @@
 import {createGame, parseMoney, money, placeBid, maxBid, outcome, purchase, nextRound, skipCharacter, rpsWinner, isComplete, restoreGame} from "./game.js";
+import {POWER_STATS, powerScore, preparePowerData, teamPower, compareTeamPower} from "./power.js?v=1";
 
 const $ = (selector) => document.querySelector(selector);
 const esc = (value) => String(value).replace(/[&<>"']/g, char => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"})[char]);
@@ -10,6 +11,7 @@ const symbols = {
   shuffle: '<path d="m17 3 4 4-4 4m0 2 4 4-4 4M3 7h3c4 0 8 10 12 10h3M3 17h3c1.5 0 3-1.5 4.5-3.5M14 9.5C15.5 8 17 7 18 7h3"/>',
   coin: '<circle cx="12" cy="12" r="9"/><path d="M15 8H10a2 2 0 0 0 0 4h4a2 2 0 0 1 0 4H9m3-10v12"/>',
   trophy: '<path d="M8 3h8v7a4 4 0 0 1-8 0zm8 2h4v3a4 4 0 0 1-4 4M8 5H4v3a4 4 0 0 0 4 4m4 2v6m-4 1h8"/>',
+  bolt: '<path d="m13 2-9 12h7l-1 8 10-13h-7z"/>',
   sound: '<path d="m11 5-6 4H2v6h3l6 4zm4 3a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/>',
   mute: '<path d="m11 5-6 4H2v6h3l6 4zm5 4 5 6m0-6-5 6"/>',
   close: '<path d="m6 6 12 12M6 18 18 6"/>',
@@ -22,6 +24,7 @@ const icon = (name, cls = "") => `<svg class="icon ${cls}" viewBox="0 0 24 24" f
 const logo = `<span class="brand-mark"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="m6 7 8 2 12 16-8-2zm20 0-8 2L6 25l8-2z" fill="currentColor"/></svg></span><span>DRAFT<span class="brand-light">ARENA</span><span class="brand-dot">®</span></span>`;
 const KEY = "draft-arena-game-v1";
 let topics = [];
+let powerData = null;
 let selected = "demon";
 let filter = "all";
 let screen = "setup";
@@ -67,6 +70,22 @@ function persist() {
 }
 const currentTopic = () => topics.find(t => t.id === (screen === "setup" ? selected : game.topicId));
 const character = (id) => topics.flatMap(t => t.characters).find(c => c.id === id);
+const ratingFor = (id) => powerData?.characters[id];
+const scoreFor = (id) => powerScore(ratingFor(id));
+function powerBadge(id) {
+  const score = scoreFor(id);
+  return `<span class="power-badge" aria-label="${score === null ? "Оценка силы недоступна" : `Игровая сила ${score} из 100`}">${icon("bolt")} ${score ?? "—"}<small>/100</small></span>`;
+}
+async function loadPowerData() {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), 8000);
+  try {
+    const response = await fetch("./power.json?v=1", {signal: controller.signal});
+    if (!response.ok) return null;
+    return await response.json();
+  } catch { return null; }
+  finally { clearTimeout(timeout); }
+}
 
 function header() {
   return `<header class="header"><div class="header-inner">
@@ -100,7 +119,7 @@ function setup() {
     <div class="setup-layout"><section class="topics-section">
       <div class="section-head"><h2><span>01</span> Выбери вселенную</h2><div class="filters" aria-label="Фильтр тем">${[["all","Все"],["Аниме","Аниме"],["Сериал","Сериалы"]].map(([id,label]) => `<button data-action="filter" data-id="${id}" aria-pressed="${filter === id}" class="${filter === id ? "active" : ""}">${label}</button>`).join("")}</div></div>
       <div class="topics-grid">${topics.filter(t => filter === "all" || t.type === filter).map(topicCard).join("")}</div>
-      <div class="quick-rules"><div>${icon("shuffle")}<span><strong>Случайный герой</strong><small>Каждый раунд — сюрприз</small></span></div><div>${icon("coin")}<span><strong>Твоя ставка</strong><small>Решай, сколько он стоит</small></span></div><div>${icon("trophy")}<span><strong>Команда мечты</strong><small>Забирай лучших себе</small></span></div></div>
+      <div class="quick-rules"><div>${icon("shuffle")}<span><strong>Случайный герой</strong><small>Каждый раунд — сюрприз</small></span></div><div>${icon("coin")}<span><strong>Твоя ставка</strong><small>Решай, сколько он стоит</small></span></div><div>${icon("trophy")}<span><strong>Сила команды</strong><small>Сравним в финале</small></span></div></div>
     </section>
     <aside class="settings"><div class="settings-title"><h2><span>02</span> Настрой игру</h2>${icon("users")}</div>
       <form id="setup-form" novalidate>
@@ -109,6 +128,7 @@ function setup() {
         <label class="field-label" for="budget">БЮДЖЕТ НА ИГРОКА <span>Одинаковый для обоих</span></label>
         <div class="number-control"><button type="button" data-action="budget-step" data-value="-10" aria-label="Уменьшить бюджет">−</button><div><input id="budget" name="budget" inputmode="decimal" enterkeyhint="done" value="${esc(form.budget)}" aria-describedby="budget-note" /><span>$</span></div><button type="button" data-action="budget-step" data-value="10" aria-label="Увеличить бюджет">+</button></div>
         <div class="field-note" id="budget-note">Игровые доллары. Минимальная ставка — 0,01 $.</div>
+        <button type="button" class="power-explainer" data-action="power-rules">${icon("bolt")} В финале — сравнение силы команд ${icon("info")}</button>
         <label class="field-label team-label" for="team-size">ПЕРСОНАЖЕЙ В КОМАНДЕ <span>От 1 до 12</span></label>
         <div class="size-options">${[3,5,7,10].map(n => `<button type="button" data-action="size" data-value="${n}" class="${form.size === n ? "active" : ""}" aria-pressed="${form.size === n}">${n}</button>`).join("")}<input id="team-size" name="size" type="number" inputmode="numeric" enterkeyhint="done" min="1" max="12" step="1" value="${form.size}" aria-label="Свой размер команды" /></div>
         <div class="selected-summary"><span class="summary-icon">${icon("grid")}</span><div><strong>${topic.title}</strong><span><b id="total-slots">${form.size * 2}</b> из 24 героев попадут в команды</span></div></div>
@@ -124,7 +144,7 @@ function teamSlots(p, compact = false) {
     const sale = p.team[i];
     if (!sale) return `<div class="empty-slot"><span>+</span><small>Место ${String(i+1).padStart(2,"0")}</small></div>`;
     const c = character(sale.id);
-    return `<button class="team-slot" data-action="character" data-id="${c.id}" aria-label="${esc(c.name)}, куплен за ${money(sale.price)}"><img src="${c.image}" alt="${esc(c.name)}" /><span>${esc(c.name)}<small>${money(sale.price)}</small></span></button>`;
+    return `<button class="team-slot" data-action="character" data-id="${c.id}" aria-label="${esc(c.name)}, сила ${scoreFor(c.id) ?? "неизвестна"}, куплен за ${money(sale.price)}"><img src="${c.image}" alt="${esc(c.name)}" /><b class="slot-power">${icon("bolt")} ${scoreFor(c.id) ?? "—"}</b><span>${esc(c.name)}<small>${money(sale.price)}</small></span></button>`;
   }).join("")}</div>`;
 }
 function playerPanel(p, i) {
@@ -139,7 +159,7 @@ function playerPanel(p, i) {
     <form class="bid-form" data-player="${i}" novalidate><label for="bid-${i}" class="sr-only">Ставка игрока ${i+1} в долларах</label><div class="bid-input-wrap"><input id="bid-${i}" inputmode="decimal" enterkeyhint="done" autocomplete="off" value="${(suggested / 100).toFixed(2)}" ${!active ? "disabled" : ""} /><span>$</span></div>
     <div class="bid-quick">${[1,100,500].map(amount => `<button type="button" data-action="bid-add" data-player="${i}" data-value="${amount}" ${!active ? "disabled" : ""}>+${amount === 1 ? "0,01" : amount/100} $</button>`).join("")}<button type="button" data-action="bid-max" data-player="${i}" ${!active ? "disabled" : ""}>Макс.</button></div>
     <button class="bid-button" type="submit" ${!active ? "disabled" : ""}>${full ? "Команда собрана" : "Сделать ставку"} ${icon(full ? "check" : "arrow")}</button></form>
-    <div class="team-head"><h3>Твоя команда</h3><span>${p.team.length} <b>/ ${game.size}</b></span></div>${teamSlots(p)}
+    <div class="team-head"><h3>Твоя команда</h3><span>${p.team.length} <b>/ ${game.size}</b></span></div><div class="team-power-caption">${icon("bolt")} Сила команды <strong>${teamPower(p.team, powerData?.characters).total ?? "—"}</strong></div>${teamSlots(p)}
   </section>`;
 }
 function auction() {
@@ -151,6 +171,7 @@ function auction() {
     <div class="game-title"><div class="eyebrow">АРЕНА ОТКРЫТА</div><h1>За кого <span>поборемся?</span></h1><p>У каждого героя своя цена. Последнее слово — за вами.</p></div>
     <div class="auction-layout">${playerPanel(game.players[0],0)}
       <section class="lot-center"><div class="character-card ${sold ? "is-sold" : ""}"><img src="${c.image}" alt="${esc(c.name)}" /><div class="character-shade"></div><span class="lot-badge">${sold ? "В КОМАНДЕ" : "НА АУКЦИОНЕ"} <i></i></span><button class="character-info icon-button" data-action="character" data-id="${c.id}" aria-label="Подробнее о персонаже">${icon("info")}</button><div class="lot-character-name"><span>${topic.english}</span><h2>${esc(c.name)}</h2><p>${esc(c.originalName)}</p></div>${sold ? `<div class="sold-ribbon">${icon("check")} КУПЛЕНО</div>` : ""}</div>
+      <button class="lot-power" data-action="character" data-id="${c.id}">${powerBadge(c.id)}<span>Сила героя <small>Оценка Draft Arena</small></span>${icon("info")}</button>
       <div class="lot-price"><span>${sold ? `Забирает ${esc(game.players[game.lastSale.player].name)}` : "Лучшая ставка"}</span><strong>${money(sold ? game.lastSale.price : Math.max(...game.bids))}</strong></div>
       ${sold ? `<button class="primary buy-button" data-action="next">${isComplete(game) ? "Посмотреть команды" : "Следующий персонаж"} ${icon("arrow")}</button>` : `<button class="primary buy-button" data-action="buy" ${game.bids.some(Boolean) ? "" : "disabled"}>Купить персонажа ${icon("check")}</button><button class="skip-button" data-action="skip" ${game.bids.some(Boolean) || !game.deck.length ? "disabled" : ""}>${icon("shuffle")} Другой персонаж</button>`}
       <p class="lot-hint">${sold ? "Герой занял своё место. Продолжим?" : game.bids[0] && game.bids[0] === game.bids[1] ? "Ставки равны — покупку решит суефа" : "Равная ставка? Решите спор в суефа."}</p></section>
@@ -161,8 +182,16 @@ function auction() {
 }
 function results() {
   const word = game.size === 1 ? "персонаж" : game.size < 5 ? "персонажа" : "персонажей";
+  const comparison = compareTeamPower(game.players, powerData?.characters, game.size);
+  const {winner, difference} = comparison;
+  const title = winner === null ? "Составы готовы" : winner === "tie" ? "Равная сила!" : `${esc(game.players[winner].name)} — сильнее по баллам`;
   return `<main class="main results-main"><div class="result-icon">${icon("trophy")}</div><div class="eyebrow">АУКЦИОН ЗАВЕРШЁН</div><h1>Легенды <span>в сборе.</span></h1><p>${esc(currentTopic().title)} · В каждой команде: ${game.size} ${word}</p>
-    <div class="results-grid">${game.players.map((p,i) => `<section class="result-team p${i}"><div class="player-heading"><span class="player-avatar">P${i+1}</span><div><small>КОМАНДА ${i+1}</small><h2>${esc(p.name)}</h2></div></div><div class="result-stats"><div><span>Потрачено</span><strong>${money(game.budget-p.balance)}</strong></div><div><span>Осталось</span><strong>${money(p.balance)}</strong></div></div>${teamSlots(p,true)}</section>`).join("")}</div>
+    <section class="power-verdict ${Number.isInteger(winner) ? `p${winner}` : ""}" aria-labelledby="verdict-title"><span class="eyebrow">СРАВНЕНИЕ СИЛЫ</span><h2 id="verdict-title">${title}</h2><p>${winner === null ? "Не все оценки загрузились. Команды сохранены — можно повторить загрузку." : winner === "tie" ? "Суммы совпали. Победа по силе достаётся обоим игрокам." : `Преимущество: ${difference} балл${difference % 10 === 1 && difference % 100 !== 11 ? "" : difference % 10 >= 2 && difference % 10 <= 4 && !(difference % 100 >= 12 && difference % 100 <= 14) ? "а" : "ов"}. Каждый герой добавил свои очки в общий счёт.`}</p>
+    <div class="scoreboard">${game.players.map((p,i) => `<div class="scoreboard-player p${i}"><span>${esc(p.name)}</span><strong>${comparison.teams[i].total ?? "—"}</strong><small>баллов силы</small><div class="power-track"><span style="width:${(comparison.teams[i].total ?? 0)/(game.size*100)*100}%"></span></div></div>`).join('<span class="score-divider" aria-hidden="true">:</span>')}</div>
+    <p class="power-disclaimer">Оценка Draft Arena · сумма характеристик, без симуляции боя.</p><button class="text-button" data-action="${winner === null ? "retry-power" : "power-rules"}">${icon("info")} ${winner === null ? "Загрузить оценки снова" : "Как считается сила"}</button></section>
+    <div class="results-grid">${game.players.map((p,i) => `<section class="result-team p${i} ${winner === i ? "power-winner" : ""}"><div class="player-heading"><span class="player-avatar">P${i+1}</span><div><small>${winner === i ? "ПОБЕДА ПО СИЛЕ" : `КОМАНДА ${i+1}`}</small><h2>${esc(p.name)}</h2></div></div>
+    <div class="result-attributes">${POWER_STATS.map(({key,label}) => `<div><span>${label}</span><strong>${comparison.teams[i].stats?.[key] ?? "—"}</strong></div>`).join("")}</div>
+    <div class="result-stats"><div><span>Потрачено</span><strong>${money(game.budget-p.balance)}</strong></div><div><span>Осталось</span><strong>${money(p.balance)}</strong></div></div>${teamSlots(p,true)}</section>`).join("")}</div>
     <div class="result-actions"><button class="primary" data-action="rematch">Сыграть ещё раз ${icon("shuffle")}</button><button class="secondary" data-action="home">Выбрать другую вселенную ${icon("arrow")}</button></div>
   </main>`;
 }
@@ -193,11 +222,31 @@ function showModal(kind, content, wide = false, focus = true) {
 }
 function showRules() {
   showModal("rules", `<div class="eyebrow">ПРАВИЛА АРЕНЫ</div><h2 id="modal-title">Одна арена.<br>Две команды.</h2><div class="rules-list">
-    ${[["01","Выберите вселенную","Задайте одинаковый бюджет и размер команды. Играйте вдвоём на одном устройстве."],["02","Боритесь за героев","Персонаж выпадает случайно. Делайте ставки от 0,01 $: повышайте цену или сравняйте предложение соперника."],["03","Забирайте в команду","Нажмите «Купить персонажа». Герой достанется игроку с большей ставкой, а сумма спишется из его бюджета."],["04","Равенство решает суефа","При равной ставке выберите по очереди камень, ножницы или бумагу. Победитель купит героя по общей цене."]].map(([n,title,text]) => `<div><span>${n}</span><div><h3>${title}</h3><p>${text}</p></div></div>`).join("")}</div><div class="modal-note">${icon("info")} Сохраняем минимум 1 цент на каждое свободное место. Игра заканчивается, когда обе команды собраны. Уже принятую ставку нельзя отменить.</div><button class="primary" data-action="close-modal">Всё понятно ${icon("arrow")}</button>`);
+    ${[["01","Выберите вселенную","Задайте одинаковый бюджет и размер команды. Играйте вдвоём на одном устройстве."],["02","Боритесь за героев","Персонаж выпадает случайно. Делайте ставки от 0,01 $: повышайте цену или сравняйте предложение соперника."],["03","Забирайте в команду","Нажмите «Купить персонажа». Герой достанется игроку с большей ставкой, а сумма спишется из его бюджета."],["04","Равенство решает суефа","При равной ставке выберите по очереди камень, ножницы или бумагу. Победитель купит героя по общей цене."],["05","Сравните силу","В финале складываем баллы героев. Большая сумма побеждает, одинаковая — ничья. Цена покупки на силу не влияет."]].map(([n,title,text]) => `<div><span>${n}</span><div><h3>${title}</h3><p>${text}</p></div></div>`).join("")}</div><div class="modal-note">${icon("info")} Сохраняем минимум 1 цент на каждое свободное место. Игра заканчивается, когда обе команды собраны. Уже принятую ставку нельзя отменить.</div><button class="primary" data-action="close-modal">Всё понятно ${icon("arrow")}</button>`);
+}
+function sourceLinks(ids) {
+  return ids.map(id => {
+    const source = powerData.sources[id];
+    return `<a href="${esc(source.url)}" target="_blank" rel="noopener noreferrer">${esc(source.title)} ${icon("diagonal")}</a>`;
+  }).join("");
+}
+function showPowerRules() {
+  const topic = currentTopic();
+  const ids = [...new Set(topic.characters.flatMap(c => ratingFor(c.id)?.sources ?? []))];
+  showModal("power-rules", `<div class="eyebrow">ОЦЕНКА DRAFT ARENA</div><h2 id="modal-title">Из чего складывается сила</h2>
+    <p class="modal-subtitle">У героя четыре характеристики от 1 до 25. Складываем их — получаем до 100 баллов. Сила команды — сумма баллов всех её героев.</p>
+    <div class="power-formula">Атака + защита + скорость + техника</div>
+    <div class="power-definitions">${POWER_STATS.map(stat => `<div><strong>${stat.label}</strong><span>${stat.description}</span></div>`).join("")}</div>
+    <p class="credits-text">1–5 — низкий уровень, 6–10 — базовый, 11–15 — опытный, 16–20 — высокий, 21–25 — элитный. Шкала относительная внутри выбранной вселенной. 80 баллов не означает «вдвое сильнее», чем 40.</p>
+    <p class="credits-text">Это авторские игровые оценки по описаниям способностей из открытых справочников. Числа выставлены вручную для этой игры: в источниках нет нашей шкалы. Популярность и цена покупки не участвуют в расчёте.</p>
+    <p class="credits-text">Оцениваем указанную в карточке версию с личным снаряжением. Не добавляем армии, драконов и политическую власть. Призывы, созданные собственной техникой, учитываются. Условия, временные формы и ограничения указаны у героя. Учитываем основную мангу или сериал HBO, без сиквелов и игровых усилений.</p>
+    <p class="credits-text">Сумма не моделирует совместимость героев, контрприёмы или исход настоящего боя. При равенстве — ничья по силе, без суефа. В описаниях возможны спойлеры способностей.</p>
+    <div class="power-sources"><h3>Источники · ${esc(topic.title)}</h3>${ids.length ? sourceLinks(ids) : "<p>Оценки пока недоступны. Сам аукцион работает.</p>"}<small>Редакция 1 · 20 октября 2026</small></div>
+    <button class="primary" data-action="close-modal">Понятно ${icon("check")}</button>`);
 }
 function catalogCards(query = "") {
   const chars = currentTopic().characters.filter(c => (c.name+" "+c.originalName).toLowerCase().includes(query.toLowerCase()));
-  return chars.length ? chars.map(c => `<button class="catalog-character" data-action="character" data-id="${c.id}"><img src="${c.image}" alt="${esc(c.name)}" loading="lazy" /><strong>${esc(c.name)}</strong></button>`).join("") : '<p class="empty-search">Таких героев не нашлось. Попробуй другое имя.</p>';
+  return chars.length ? chars.map(c => `<button class="catalog-character" data-action="character" data-id="${c.id}"><img src="${c.image}" alt="${esc(c.name)}" loading="lazy" /><strong>${esc(c.name)}</strong>${powerBadge(c.id)}</button>`).join("") : '<p class="empty-search">Таких героев не нашлось. Попробуй другое имя.</p>';
 }
 function showCatalog() {
   showModal("catalog", `<div class="eyebrow">ЗНАКОМЬСЯ С УЧАСТНИКАМИ</div><h2 id="modal-title">${currentTopic().title}</h2><p class="modal-subtitle">24 героя · каждый может стать твоим</p><label class="search-field">${icon("search")}<input id="catalog-search" placeholder="Найти персонажа" aria-label="Найти персонажа" /></label><div class="catalog-grid" id="catalog-grid">${catalogCards()}</div>`, true);
@@ -205,7 +254,14 @@ function showCatalog() {
 function showCharacter(id) {
   const c = character(id);
   if (!c) return;
-  showModal("character", `<div class="detail-character"><img src="${c.image}" alt="${esc(c.name)}" /><div class="eyebrow">${topics.find(t => t.characters.some(v => v.id === id)).english}</div><h2 id="modal-title">${esc(c.name)}</h2><p>${esc(c.originalName)}</p><button class="secondary" data-action="catalog">${icon("grid")} Все персонажи темы</button></div>`);
+  const rating = ratingFor(id);
+  showModal("character", `<div class="detail-character"><img src="${c.image}" alt="${esc(c.name)}" /><div class="eyebrow">${topics.find(t => t.characters.some(v => v.id === id)).english}</div><h2 id="modal-title">${esc(c.name)}</h2><p>${esc(c.originalName)}</p>
+    ${rating ? `<div class="detail-power-heading">${powerBadge(id)}<span>Оценка Draft Arena</span></div>
+    <div class="power-attributes">${POWER_STATS.map(({key,label}) => `<div><span>${label}</span><div class="power-track"><span style="width:${rating.stats[key]*4}%"></span></div><strong>${rating.stats[key]}<small>/25</small></strong></div>`).join("")}</div>
+    <p class="power-ability">${esc(rating.ability)}</p><p class="power-form"><span>Версия для игры</span>${esc(rating.form)}</p>
+    <div class="power-sources"><h3>Описание способностей</h3>${sourceLinks(rating.sources)}</div><button class="text-button" data-action="power-rules">${icon("info")} Как получены баллы</button>`
+    : `<p class="credits-text">Оценка силы пока недоступна.</p><button class="text-button" data-action="retry-power">Загрузить оценки снова</button>`}
+    <button class="secondary" data-action="catalog">${icon("grid")} Все персонажи темы</button></div>`);
 }
 const gestures = {rock: ["✊","Камень"], scissors: ["✌️","Ножницы"], paper: ["✋","Бумага"]};
 function showRps() {
@@ -273,6 +329,16 @@ document.addEventListener("click", event => {
       case "home": screen = "setup"; closeModal(); render(); window.scrollTo({top:0,behavior:"smooth"}); break;
       case "resume": screen = game.phase === "finished" ? "results" : "auction"; render(); break;
       case "rules": showRules(); break;
+      case "power-rules": showPowerRules(); break;
+      case "retry-power": {
+        button.disabled = true;
+        loadPowerData().then(data => {
+          powerData = preparePowerData(data, topics);
+          closeModal(); render();
+          toast(powerData && Object.keys(powerData.characters).length === topics.flatMap(t => t.characters).length ? "Оценки силы загружены." : "Не удалось загрузить все оценки. Попробуй позже.");
+        });
+        break;
+      }
       case "catalog": showCatalog(); break;
       case "character": showCharacter(id); break;
       case "close-modal": dismissModal(); break;
@@ -288,7 +354,7 @@ document.addEventListener("click", event => {
       case "skip": skipCharacter(game); persist(); render(); beep(); break;
       case "next":
         nextRound(game); screen = game.phase === "finished" ? "results" : "auction"; persist(); render(); beep();
-        if (window.matchMedia("(max-width:760px)").matches) {
+        if (screen === "results" || window.matchMedia("(max-width:760px)").matches) {
           const behavior = window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth";
           if (screen === "results") window.scrollTo({top:0,behavior});
           else $(".character-card")?.scrollIntoView({block:"start",behavior});
@@ -318,9 +384,10 @@ document.addEventListener("keydown", event => {
 });
 
 try {
-  const response = await fetch("./catalog.json");
+  const [response, ratings] = await Promise.all([fetch("./catalog.json"), loadPowerData()]);
   if (!response.ok) throw new Error("Не удалось загрузить персонажей.");
   topics = await response.json();
+  powerData = preparePowerData(ratings, topics);
   try {
     game = restoreGame(localStorage.getItem(KEY), topics);
     if (game) {

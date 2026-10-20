@@ -1,0 +1,2068 @@
+{
+  "version": 1,
+  "updated": "2026-10-20",
+  "label": "Оценка Draft Arena",
+  "sources": {
+    "demon": {
+      "title": "Wikipedia · персонажи Demon Slayer",
+      "url": "https://en.wikipedia.org/wiki/List_of_Demon_Slayer:_Kimetsu_no_Yaiba_characters"
+    },
+    "bleach": {
+      "title": "Wikipedia · персонажи Bleach",
+      "url": "https://en.wikipedia.org/wiki/List_of_Bleach_characters"
+    },
+    "reapers": {
+      "title": "Wikipedia · синигами Bleach",
+      "url": "https://en.wikipedia.org/wiki/List_of_Soul_Reapers_in_Bleach"
+    },
+    "hero": {
+      "title": "Wikipedia · персонажи My Hero Academia",
+      "url": "https://en.wikipedia.org/wiki/List_of_My_Hero_Academia_characters"
+    },
+    "titan": {
+      "title": "Wikipedia · персонажи Attack on Titan",
+      "url": "https://en.wikipedia.org/wiki/List_of_Attack_on_Titan_characters"
+    },
+    "thrones": {
+      "title": "Wikipedia · персонажи Game of Thrones",
+      "url": "https://en.wikipedia.org/wiki/List_of_Game_of_Thrones_characters"
+    },
+    "jujutsu": {
+      "title": "Wikipedia · персонажи Jujutsu Kaisen",
+      "url": "https://en.wikipedia.org/wiki/List_of_Jujutsu_Kaisen_characters"
+    },
+    "yoriichi": {
+      "title": "Kimetsu no Yaiba Wiki · Ёриичи",
+      "url": "https://kimetsu-no-yaiba.fandom.com/wiki/Yoriichi_Tsugikuni"
+    },
+    "ichigo": {
+      "title": "Bleach Wiki · Ичиго",
+      "url": "https://bleach.fandom.com/wiki/Ichigo_Kurosaki"
+    },
+    "gojo": {
+      "title": "Jujutsu Kaisen Wiki · Годзё",
+      "url": "https://jujutsu-kaisen.fandom.com/wiki/Satoru_Gojo"
+    }
+  },
+  "characters": {
+    "demon-126071": {
+      "topicId": "demon",
+      "stats": {
+        "attack": 22,
+        "defense": 20,
+        "speed": 23,
+        "technique": 24
+      },
+      "ability": "Дыхание Солнца",
+      "form": "Человек, финальная битва",
+      "sources": [
+        "demon"
+      ]
+    },
+    "demon-127518": {
+      "topicId": "demon",
+      "stats": {
+        "attack": 17,
+        "defense": 20,
+        "speed": 18,
+        "technique": 16
+      },
+      "ability": "Кровавое пламя",
+      "form": "Пробуждённая демоническая форма",
+      "sources": [
+        "demon"
+      ]
+    },
+    "demon-129130": {
+      "topicId": "demon",
+      "stats": {
+        "attack": 18,
+        "defense": 18,
+        "speed": 20,
+        "technique": 19
+      },
+      "ability": "Дыхание Зверя",
+      "form": "Финальная арка",
+      "sources": [
+        "demon"
+      ]
+    },
+    "demon-129131": {
+      "topicId": "demon",
+      "stats": {
+        "attack": 20,
+        "defense": 16,
+        "speed": 24,
+        "technique": 20
+      },
+      "ability": "Дыхание Грома",
+      "form": "Финальная арка",
+      "sources": [
+        "demon"
+      ]
+    },
+    "demon-130050": {
+      "topicId": "demon",
+      "stats": {
+        "attack": 21,
+        "defense": 22,
+        "speed": 22,
+        "technique": 22
+      },
+      "ability": "Дыхание Воды",
+      "form": "С меткой",
+      "sources": [
+        "demon"
+      ]
+    },
+    "demon-129133": {
+      "topicId": "demon",
+      "stats": {
+        "attack": 20,
+        "defense": 20,
+        "speed": 21,
+        "technique": 21
+      },
+      "ability": "Дыхание Пламени",
+      "form": "Поезд «Бесконечный»",
+      "sources": [
+        "demon"
+      ]
+    },
+    "demon-136070": {
+      "topicId": "demon",
+      "stats": {
+        "attack": 15,
+        "defense": 14,
+        "speed": 24,
+        "technique": 24
+      },
+      "ability": "Яд глицинии",
+      "form": "Личный яд, без жертвенного плана",
+      "sources": [
+        "demon"
+      ]
+    },
+    "demon-136071": {
+      "topicId": "demon",
+      "stats": {
+        "attack": 20,
+        "defense": 21,
+        "speed": 22,
+        "technique": 20
+      },
+      "ability": "Дыхание Звука",
+      "form": "До тяжёлых ранений",
+      "sources": [
+        "demon"
+      ]
+    },
+    "demon-136072": {
+      "topicId": "demon",
+      "stats": {
+        "attack": 22,
+        "defense": 19,
+        "speed": 22,
+        "technique": 20
+      },
+      "ability": "Дыхание Любви",
+      "form": "С меткой",
+      "sources": [
+        "demon"
+      ]
+    },
+    "demon-139038": {
+      "topicId": "demon",
+      "stats": {
+        "attack": 19,
+        "defense": 17,
+        "speed": 22,
+        "technique": 21
+      },
+      "ability": "Дыхание Цветка",
+      "form": "Финальная арка",
+      "sources": [
+        "demon"
+      ]
+    },
+    "demon-136069": {
+      "topicId": "demon",
+      "stats": {
+        "attack": 21,
+        "defense": 18,
+        "speed": 23,
+        "technique": 23
+      },
+      "ability": "Дыхание Тумана",
+      "form": "С меткой",
+      "sources": [
+        "demon"
+      ]
+    },
+    "demon-141694": {
+      "topicId": "demon",
+      "stats": {
+        "attack": 23,
+        "defense": 23,
+        "speed": 23,
+        "technique": 22
+      },
+      "ability": "Боевые искусства",
+      "form": "Высшая Луна 3",
+      "sources": [
+        "demon"
+      ]
+    },
+    "demon-137777": {
+      "topicId": "demon",
+      "stats": {
+        "attack": 21,
+        "defense": 19,
+        "speed": 23,
+        "technique": 23
+      },
+      "ability": "Дыхание Змеи",
+      "form": "С меткой",
+      "sources": [
+        "demon"
+      ]
+    },
+    "demon-137774": {
+      "topicId": "demon",
+      "stats": {
+        "attack": 22,
+        "defense": 22,
+        "speed": 23,
+        "technique": 22
+      },
+      "ability": "Дыхание Ветра",
+      "form": "С меткой",
+      "sources": [
+        "demon"
+      ]
+    },
+    "demon-129132": {
+      "topicId": "demon",
+      "stats": {
+        "attack": 25,
+        "defense": 25,
+        "speed": 24,
+        "technique": 24
+      },
+      "ability": "Регенерация",
+      "form": "До ослабляющего препарата",
+      "sources": [
+        "demon"
+      ]
+    },
+    "demon-137809": {
+      "topicId": "demon",
+      "stats": {
+        "attack": 12,
+        "defense": 11,
+        "speed": 14,
+        "technique": 15
+      },
+      "ability": "Фехтование",
+      "form": "Живой, финальный отбор",
+      "sources": [
+        "demon"
+      ]
+    },
+    "demon-137776": {
+      "topicId": "demon",
+      "stats": {
+        "attack": 18,
+        "defense": 20,
+        "speed": 13,
+        "technique": 18
+      },
+      "ability": "Поглощение демонической плоти",
+      "form": "Финальная арка",
+      "sources": [
+        "demon"
+      ]
+    },
+    "demon-137778": {
+      "topicId": "demon",
+      "stats": {
+        "attack": 23,
+        "defense": 23,
+        "speed": 22,
+        "technique": 23
+      },
+      "ability": "Дыхание Камня",
+      "form": "С меткой",
+      "sources": [
+        "demon"
+      ]
+    },
+    "demon-149220": {
+      "topicId": "demon",
+      "stats": {
+        "attack": 25,
+        "defense": 24,
+        "speed": 25,
+        "technique": 25
+      },
+      "ability": "Дыхание Солнца",
+      "form": "В расцвете сил",
+      "sources": [
+        "demon",
+        "yoriichi"
+      ]
+    },
+    "demon-144591": {
+      "topicId": "demon",
+      "stats": {
+        "attack": 24,
+        "defense": 24,
+        "speed": 22,
+        "technique": 23
+      },
+      "ability": "Ледяные техники",
+      "form": "Высшая Луна 2",
+      "sources": [
+        "demon"
+      ]
+    },
+    "demon-141918": {
+      "topicId": "demon",
+      "stats": {
+        "attack": 24,
+        "defense": 24,
+        "speed": 23,
+        "technique": 24
+      },
+      "ability": "Дыхание Луны",
+      "form": "Высшая Луна 1",
+      "sources": [
+        "demon"
+      ]
+    },
+    "demon-138847": {
+      "topicId": "demon",
+      "stats": {
+        "attack": 9,
+        "defense": 15,
+        "speed": 10,
+        "technique": 22
+      },
+      "ability": "Медицина, кровавые чары",
+      "form": "Без заранее подготовленного отравления",
+      "sources": [
+        "demon"
+      ]
+    },
+    "demon-138990": {
+      "topicId": "demon",
+      "stats": {
+        "attack": 8,
+        "defense": 12,
+        "speed": 8,
+        "technique": 13
+      },
+      "ability": "Кузнечное мастерство",
+      "form": "Кузнец",
+      "sources": [
+        "demon"
+      ]
+    },
+    "demon-139734": {
+      "topicId": "demon",
+      "stats": {
+        "attack": 16,
+        "defense": 18,
+        "speed": 17,
+        "technique": 16
+      },
+      "ability": "Пояса-оби",
+      "form": "Без Гютаро",
+      "sources": [
+        "demon"
+      ]
+    },
+    "bleach-5": {
+      "topicId": "bleach",
+      "stats": {
+        "attack": 25,
+        "defense": 24,
+        "speed": 25,
+        "technique": 24
+      },
+      "ability": "Гэцуга Тэнсё",
+      "form": "Истинный банкай, собственные силы",
+      "sources": [
+        "bleach",
+        "ichigo"
+      ]
+    },
+    "bleach-210": {
+      "topicId": "bleach",
+      "stats": {
+        "attack": 21,
+        "defense": 21,
+        "speed": 22,
+        "technique": 25
+      },
+      "ability": "Реструктуризация банкаем",
+      "form": "Тысячелетняя кровавая война",
+      "sources": [
+        "bleach"
+      ]
+    },
+    "bleach-6": {
+      "topicId": "bleach",
+      "stats": {
+        "attack": 22,
+        "defense": 18,
+        "speed": 20,
+        "technique": 22
+      },
+      "ability": "Ледяной банкай",
+      "form": "Тысячелетняя кровавая война",
+      "sources": [
+        "reapers"
+      ]
+    },
+    "bleach-908": {
+      "topicId": "bleach",
+      "stats": {
+        "attack": 21,
+        "defense": 20,
+        "speed": 25,
+        "technique": 23
+      },
+      "ability": "Сюнко",
+      "form": "Тысячелетняя кровавая война",
+      "sources": [
+        "reapers"
+      ]
+    },
+    "bleach-1086": {
+      "topicId": "bleach",
+      "stats": {
+        "attack": 24,
+        "defense": 25,
+        "speed": 24,
+        "technique": 25
+      },
+      "ability": "Полный гипноз",
+      "form": "После слияния с Хогёку",
+      "sources": [
+        "bleach"
+      ]
+    },
+    "bleach-909": {
+      "topicId": "bleach",
+      "stats": {
+        "attack": 25,
+        "defense": 24,
+        "speed": 22,
+        "technique": 20
+      },
+      "ability": "Разрушительная мощь",
+      "form": "Банкай",
+      "sources": [
+        "reapers"
+      ]
+    },
+    "bleach-1081": {
+      "topicId": "bleach",
+      "stats": {
+        "attack": 22,
+        "defense": 22,
+        "speed": 22,
+        "technique": 20
+      },
+      "ability": "Регенерация, Сэро",
+      "form": "Вторая ступень высвобождения",
+      "sources": [
+        "bleach"
+      ]
+    },
+    "bleach-1080": {
+      "topicId": "bleach",
+      "stats": {
+        "attack": 20,
+        "defense": 20,
+        "speed": 22,
+        "technique": 19
+      },
+      "ability": "Ближний бой",
+      "form": "Ресуррексьон",
+      "sources": [
+        "bleach"
+      ]
+    },
+    "bleach-7": {
+      "topicId": "bleach",
+      "stats": {
+        "attack": 8,
+        "defense": 25,
+        "speed": 13,
+        "technique": 24
+      },
+      "ability": "Щиты, восстановление",
+      "form": "Тысячелетняя кровавая война",
+      "sources": [
+        "bleach"
+      ]
+    },
+    "bleach-245": {
+      "topicId": "bleach",
+      "stats": {
+        "attack": 24,
+        "defense": 22,
+        "speed": 22,
+        "technique": 24
+      },
+      "ability": "Замораживание",
+      "form": "Зрелый банкай",
+      "sources": [
+        "reapers"
+      ]
+    },
+    "bleach-907": {
+      "topicId": "bleach",
+      "stats": {
+        "attack": 22,
+        "defense": 22,
+        "speed": 23,
+        "technique": 23
+      },
+      "ability": "Лепестки-клинки",
+      "form": "После Королевского дворца",
+      "sources": [
+        "reapers"
+      ]
+    },
+    "bleach-1088": {
+      "topicId": "bleach",
+      "stats": {
+        "attack": 23,
+        "defense": 22,
+        "speed": 23,
+        "technique": 25
+      },
+      "ability": "Правила игр",
+      "form": "Банкай",
+      "sources": [
+        "reapers"
+      ]
+    },
+    "bleach-1084": {
+      "topicId": "bleach",
+      "stats": {
+        "attack": 18,
+        "defense": 19,
+        "speed": 21,
+        "technique": 23
+      },
+      "ability": "Инверсия восприятия",
+      "form": "Сикай, без дружественного огня",
+      "sources": [
+        "reapers"
+      ]
+    },
+    "bleach-1087": {
+      "topicId": "bleach",
+      "stats": {
+        "attack": 22,
+        "defense": 19,
+        "speed": 22,
+        "technique": 23
+      },
+      "ability": "Ядовитый банкай",
+      "form": "Битва за Каракуру",
+      "sources": [
+        "bleach"
+      ]
+    },
+    "bleach-906": {
+      "topicId": "bleach",
+      "stats": {
+        "attack": 21,
+        "defense": 20,
+        "speed": 21,
+        "technique": 20
+      },
+      "ability": "Истинный банкай",
+      "form": "После Королевского дворца",
+      "sources": [
+        "reapers"
+      ]
+    },
+    "bleach-564": {
+      "topicId": "bleach",
+      "stats": {
+        "attack": 22,
+        "defense": 22,
+        "speed": 23,
+        "technique": 25
+      },
+      "ability": "Антитеза",
+      "form": "Тысячелетняя кровавая война",
+      "sources": [
+        "bleach"
+      ]
+    },
+    "bleach-904": {
+      "topicId": "bleach",
+      "stats": {
+        "attack": 13,
+        "defense": 14,
+        "speed": 16,
+        "technique": 17
+      },
+      "ability": "Клинки из пепла",
+      "form": "Сикай",
+      "sources": [
+        "reapers"
+      ]
+    },
+    "bleach-4730": {
+      "topicId": "bleach",
+      "stats": {
+        "attack": 20,
+        "defense": 20,
+        "speed": 21,
+        "technique": 20
+      },
+      "ability": "Возврат Сэро",
+      "form": "Взрослая форма",
+      "sources": [
+        "bleach"
+      ]
+    },
+    "bleach-905": {
+      "topicId": "bleach",
+      "stats": {
+        "attack": 20,
+        "defense": 17,
+        "speed": 25,
+        "technique": 22
+      },
+      "ability": "Скорость, Сюнко",
+      "form": "Тысячелетняя кровавая война",
+      "sources": [
+        "reapers"
+      ]
+    },
+    "bleach-575": {
+      "topicId": "bleach",
+      "stats": {
+        "attack": 17,
+        "defense": 19,
+        "speed": 13,
+        "technique": 13
+      },
+      "ability": "Бронированные руки",
+      "form": "Развитый фуллбринг",
+      "sources": [
+        "bleach"
+      ]
+    },
+    "bleach-3845": {
+      "topicId": "bleach",
+      "stats": {
+        "attack": 23,
+        "defense": 23,
+        "speed": 22,
+        "technique": 24
+      },
+      "ability": "Меч, исцеление",
+      "form": "Банкай",
+      "sources": [
+        "reapers"
+      ]
+    },
+    "bleach-1168": {
+      "topicId": "bleach",
+      "stats": {
+        "attack": 19,
+        "defense": 21,
+        "speed": 19,
+        "technique": 25
+      },
+      "ability": "Яды, модификации",
+      "form": "Банкай, обычный набор средств",
+      "sources": [
+        "reapers"
+      ]
+    },
+    "bleach-911": {
+      "topicId": "bleach",
+      "stats": {
+        "attack": 18,
+        "defense": 17,
+        "speed": 18,
+        "technique": 22
+      },
+      "ability": "Внутренний наставник",
+      "form": "Дух Дзангэцу, не Яхве",
+      "sources": [
+        "bleach"
+      ]
+    },
+    "bleach-1095": {
+      "topicId": "bleach",
+      "stats": {
+        "attack": 15,
+        "defense": 16,
+        "speed": 18,
+        "technique": 17
+      },
+      "ability": "Кусаригама",
+      "form": "Основная манга, сикай",
+      "sources": [
+        "reapers"
+      ]
+    },
+    "hero-89220": {
+      "topicId": "hero",
+      "stats": {
+        "attack": 23,
+        "defense": 20,
+        "speed": 18,
+        "technique": 22
+      },
+      "ability": "Огонь и лёд",
+      "form": "Финальная война",
+      "sources": [
+        "hero"
+      ]
+    },
+    "hero-88892": {
+      "topicId": "hero",
+      "stats": {
+        "attack": 24,
+        "defense": 20,
+        "speed": 25,
+        "technique": 22
+      },
+      "ability": "Взрывы",
+      "form": "Пробуждённая причуда",
+      "sources": [
+        "hero"
+      ]
+    },
+    "hero-89028": {
+      "topicId": "hero",
+      "stats": {
+        "attack": 25,
+        "defense": 24,
+        "speed": 25,
+        "technique": 24
+      },
+      "ability": "Один за всех",
+      "form": "До утраты причуды",
+      "sources": [
+        "hero"
+      ]
+    },
+    "hero-89225": {
+      "topicId": "hero",
+      "stats": {
+        "attack": 12,
+        "defense": 14,
+        "speed": 18,
+        "technique": 24
+      },
+      "ability": "Стирание причуд",
+      "form": "До тяжёлых ранений",
+      "sources": [
+        "hero"
+      ]
+    },
+    "hero-89224": {
+      "topicId": "hero",
+      "stats": {
+        "attack": 25,
+        "defense": 25,
+        "speed": 25,
+        "technique": 22
+      },
+      "ability": "Один за всех",
+      "form": "В расцвете сил",
+      "sources": [
+        "hero"
+      ]
+    },
+    "hero-89243": {
+      "topicId": "hero",
+      "stats": {
+        "attack": 17,
+        "defense": 23,
+        "speed": 13,
+        "technique": 16
+      },
+      "ability": "Затвердевание",
+      "form": "Несокрушимый",
+      "sources": [
+        "hero"
+      ]
+    },
+    "hero-125619": {
+      "topicId": "hero",
+      "stats": {
+        "attack": 17,
+        "defense": 13,
+        "speed": 20,
+        "technique": 22
+      },
+      "ability": "Трансформация",
+      "form": "Пробуждение, запас крови ограничен",
+      "sources": [
+        "hero"
+      ]
+    },
+    "hero-126378": {
+      "topicId": "hero",
+      "stats": {
+        "attack": 24,
+        "defense": 10,
+        "speed": 16,
+        "technique": 19
+      },
+      "ability": "Синее пламя",
+      "form": "Финальная война",
+      "sources": [
+        "hero"
+      ]
+    },
+    "hero-89221": {
+      "topicId": "hero",
+      "stats": {
+        "attack": 18,
+        "defense": 13,
+        "speed": 17,
+        "technique": 22
+      },
+      "ability": "Невесомость",
+      "form": "Пробуждённая причуда",
+      "sources": [
+        "hero"
+      ]
+    },
+    "hero-89226": {
+      "topicId": "hero",
+      "stats": {
+        "attack": 25,
+        "defense": 25,
+        "speed": 24,
+        "technique": 24
+      },
+      "ability": "Распад, Все за одного",
+      "form": "До потери сил",
+      "sources": [
+        "hero"
+      ]
+    },
+    "hero-89249": {
+      "topicId": "hero",
+      "stats": {
+        "attack": 18,
+        "defense": 12,
+        "speed": 13,
+        "technique": 16
+      },
+      "ability": "Электричество",
+      "form": "С направляющим снаряжением",
+      "sources": [
+        "hero"
+      ]
+    },
+    "hero-89223": {
+      "topicId": "hero",
+      "stats": {
+        "attack": 12,
+        "defense": 14,
+        "speed": 18,
+        "technique": 18
+      },
+      "ability": "Лягушачьи способности",
+      "form": "Финальная война",
+      "sources": [
+        "hero"
+      ]
+    },
+    "hero-128299": {
+      "topicId": "hero",
+      "stats": {
+        "attack": 18,
+        "defense": 14,
+        "speed": 25,
+        "technique": 22
+      },
+      "ability": "Управление перьями",
+      "form": "Полные крылья",
+      "sources": [
+        "hero"
+      ]
+    },
+    "hero-123527": {
+      "topicId": "hero",
+      "stats": {
+        "attack": 17,
+        "defense": 23,
+        "speed": 24,
+        "technique": 24
+      },
+      "ability": "Проницаемость",
+      "form": "С восстановленной причудой",
+      "sources": [
+        "hero"
+      ]
+    },
+    "hero-89897": {
+      "topicId": "hero",
+      "stats": {
+        "attack": 15,
+        "defense": 11,
+        "speed": 13,
+        "technique": 18
+      },
+      "ability": "Звуковые атаки",
+      "form": "С усилителями",
+      "sources": [
+        "hero"
+      ]
+    },
+    "hero-125934": {
+      "topicId": "hero",
+      "stats": {
+        "attack": 22,
+        "defense": 18,
+        "speed": 16,
+        "technique": 23
+      },
+      "ability": "Свойства съеденного",
+      "form": "Подготовленный набор пищи",
+      "sources": [
+        "hero"
+      ]
+    },
+    "hero-89898": {
+      "topicId": "hero",
+      "stats": {
+        "attack": 24,
+        "defense": 22,
+        "speed": 18,
+        "technique": 21
+      },
+      "ability": "Тёмная Тень",
+      "form": "Темнота, контролируемая форма",
+      "sources": [
+        "hero"
+      ]
+    },
+    "hero-89241": {
+      "topicId": "hero",
+      "stats": {
+        "attack": 15,
+        "defense": 13,
+        "speed": 12,
+        "technique": 24
+      },
+      "ability": "Создание предметов",
+      "form": "Обычный запас липидов",
+      "sources": [
+        "hero"
+      ]
+    },
+    "hero-89242": {
+      "topicId": "hero",
+      "stats": {
+        "attack": 9,
+        "defense": 11,
+        "speed": 13,
+        "technique": 22
+      },
+      "ability": "Промывание мозгов",
+      "form": "С голосовым модулятором",
+      "sources": [
+        "hero"
+      ]
+    },
+    "hero-148985": {
+      "topicId": "hero",
+      "stats": {
+        "attack": 22,
+        "defense": 22,
+        "speed": 24,
+        "technique": 20
+      },
+      "ability": "Кроличья сила",
+      "form": "До тяжёлых ранений",
+      "sources": [
+        "hero"
+      ]
+    },
+    "hero-89247": {
+      "topicId": "hero",
+      "stats": {
+        "attack": 17,
+        "defense": 16,
+        "speed": 17,
+        "technique": 18
+      },
+      "ability": "Кислота",
+      "form": "Финальная война",
+      "sources": [
+        "hero"
+      ]
+    },
+    "hero-126093": {
+      "topicId": "hero",
+      "stats": {
+        "attack": 3,
+        "defense": 3,
+        "speed": 4,
+        "technique": 24
+      },
+      "ability": "Перемотка",
+      "form": "Показанный контроль, без бесконечного запаса",
+      "sources": [
+        "hero"
+      ]
+    },
+    "hero-89589": {
+      "topicId": "hero",
+      "stats": {
+        "attack": 20,
+        "defense": 15,
+        "speed": 14,
+        "technique": 25
+      },
+      "ability": "Дублирование",
+      "form": "После преодоления страха",
+      "sources": [
+        "hero"
+      ]
+    },
+    "hero-89222": {
+      "topicId": "hero",
+      "stats": {
+        "attack": 17,
+        "defense": 17,
+        "speed": 24,
+        "technique": 17
+      },
+      "ability": "Двигатели",
+      "form": "Развитый Ресипро",
+      "sources": [
+        "hero"
+      ]
+    },
+    "titan-45627": {
+      "topicId": "titan",
+      "stats": {
+        "attack": 23,
+        "defense": 20,
+        "speed": 25,
+        "technique": 25
+      },
+      "ability": "Мастерство УПМ",
+      "form": "До тяжёлых ранений",
+      "sources": [
+        "titan"
+      ]
+    },
+    "titan-40882": {
+      "topicId": "titan",
+      "stats": {
+        "attack": 23,
+        "defense": 23,
+        "speed": 18,
+        "technique": 23
+      },
+      "ability": "Атакующий, Молотобоец",
+      "form": "Без Прародителя и Гула Земли",
+      "sources": [
+        "titan"
+      ]
+    },
+    "titan-40881": {
+      "topicId": "titan",
+      "stats": {
+        "attack": 22,
+        "defense": 20,
+        "speed": 24,
+        "technique": 24
+      },
+      "ability": "Сила Аккерманов",
+      "form": "УПМ и громовые копья",
+      "sources": [
+        "titan"
+      ]
+    },
+    "titan-46494": {
+      "topicId": "titan",
+      "stats": {
+        "attack": 25,
+        "defense": 22,
+        "speed": 8,
+        "technique": 24
+      },
+      "ability": "Колоссальный титан",
+      "form": "С трансформацией",
+      "sources": [
+        "titan"
+      ]
+    },
+    "titan-71121": {
+      "topicId": "titan",
+      "stats": {
+        "attack": 17,
+        "defense": 15,
+        "speed": 19,
+        "technique": 23
+      },
+      "ability": "Тактика, УПМ",
+      "form": "Полное снаряжение",
+      "sources": [
+        "titan"
+      ]
+    },
+    "titan-46496": {
+      "topicId": "titan",
+      "stats": {
+        "attack": 16,
+        "defense": 16,
+        "speed": 18,
+        "technique": 24
+      },
+      "ability": "Тактика",
+      "form": "До потери руки",
+      "sources": [
+        "titan"
+      ]
+    },
+    "titan-125659": {
+      "topicId": "titan",
+      "stats": {
+        "attack": 17,
+        "defense": 10,
+        "speed": 14,
+        "technique": 19
+      },
+      "ability": "Меткая стрельба",
+      "form": "Винтовка",
+      "sources": [
+        "titan"
+      ]
+    },
+    "titan-45887": {
+      "topicId": "titan",
+      "stats": {
+        "attack": 17,
+        "defense": 13,
+        "speed": 18,
+        "technique": 19
+      },
+      "ability": "Охотничья меткость",
+      "form": "Винтовка и УПМ",
+      "sources": [
+        "titan"
+      ]
+    },
+    "titan-46484": {
+      "topicId": "titan",
+      "stats": {
+        "attack": 23,
+        "defense": 25,
+        "speed": 14,
+        "technique": 20
+      },
+      "ability": "Бронированный титан",
+      "form": "С трансформацией",
+      "sources": [
+        "titan"
+      ]
+    },
+    "titan-46498": {
+      "topicId": "titan",
+      "stats": {
+        "attack": 18,
+        "defense": 16,
+        "speed": 20,
+        "technique": 21
+      },
+      "ability": "Тактика, УПМ",
+      "form": "Финальная арка",
+      "sources": [
+        "titan"
+      ]
+    },
+    "titan-46490": {
+      "topicId": "titan",
+      "stats": {
+        "attack": 22,
+        "defense": 23,
+        "speed": 20,
+        "technique": 23
+      },
+      "ability": "Женская особь",
+      "form": "С трансформацией",
+      "sources": [
+        "titan"
+      ]
+    },
+    "titan-62481": {
+      "topicId": "titan",
+      "stats": {
+        "attack": 8,
+        "defense": 9,
+        "speed": 12,
+        "technique": 12
+      },
+      "ability": "Кадетская подготовка",
+      "form": "Без политической власти",
+      "sources": [
+        "titan"
+      ]
+    },
+    "titan-125661": {
+      "topicId": "titan",
+      "stats": {
+        "attack": 24,
+        "defense": 21,
+        "speed": 15,
+        "technique": 23
+      },
+      "ability": "Точные броски",
+      "form": "Звероподобный, без армии титанов",
+      "sources": [
+        "titan"
+      ]
+    },
+    "titan-125603": {
+      "topicId": "titan",
+      "stats": {
+        "attack": 17,
+        "defense": 24,
+        "speed": 20,
+        "technique": 23
+      },
+      "ability": "Выносливость",
+      "form": "Перевозчик, без расчёта орудия",
+      "sources": [
+        "titan"
+      ]
+    },
+    "titan-71479": {
+      "topicId": "titan",
+      "stats": {
+        "attack": 19,
+        "defense": 18,
+        "speed": 22,
+        "technique": 17
+      },
+      "ability": "Челюстной титан",
+      "form": "Имир-разведчица, не Прародительница",
+      "sources": [
+        "titan"
+      ]
+    },
+    "titan-46486": {
+      "topicId": "titan",
+      "stats": {
+        "attack": 17,
+        "defense": 15,
+        "speed": 21,
+        "technique": 17
+      },
+      "ability": "Манёвренность",
+      "form": "УПМ и громовые копья",
+      "sources": [
+        "titan"
+      ]
+    },
+    "titan-125660": {
+      "topicId": "titan",
+      "stats": {
+        "attack": 20,
+        "defense": 20,
+        "speed": 25,
+        "technique": 18
+      },
+      "ability": "Полёт",
+      "form": "Крылатый Челюстной",
+      "sources": [
+        "titan"
+      ]
+    },
+    "titan-133216": {
+      "topicId": "titan",
+      "stats": {
+        "attack": 9,
+        "defense": 9,
+        "speed": 10,
+        "technique": 16
+      },
+      "ability": "Военная подготовка",
+      "form": "Личное оружие",
+      "sources": [
+        "titan"
+      ]
+    },
+    "titan-127703": {
+      "topicId": "titan",
+      "stats": {
+        "attack": 14,
+        "defense": 13,
+        "speed": 17,
+        "technique": 17
+      },
+      "ability": "УПМ",
+      "form": "Без отряда",
+      "sources": [
+        "titan"
+      ]
+    },
+    "titan-46488": {
+      "topicId": "titan",
+      "stats": {
+        "attack": 25,
+        "defense": 23,
+        "speed": 8,
+        "technique": 20
+      },
+      "ability": "Колоссальный титан",
+      "form": "С трансформацией",
+      "sources": [
+        "titan"
+      ]
+    },
+    "titan-127443": {
+      "topicId": "titan",
+      "stats": {
+        "attack": 20,
+        "defense": 18,
+        "speed": 23,
+        "technique": 23
+      },
+      "ability": "Противопехотное УПМ",
+      "form": "Полное снаряжение",
+      "sources": [
+        "titan"
+      ]
+    },
+    "titan-62485": {
+      "topicId": "titan",
+      "stats": {
+        "attack": 10,
+        "defense": 11,
+        "speed": 9,
+        "technique": 22
+      },
+      "ability": "Военная тактика",
+      "form": "Человек, без гарнизона",
+      "sources": [
+        "titan"
+      ]
+    },
+    "titan-62501": {
+      "topicId": "titan",
+      "stats": {
+        "attack": 17,
+        "defense": 14,
+        "speed": 21,
+        "technique": 20
+      },
+      "ability": "Работа с УПМ",
+      "form": "Отряд Леви",
+      "sources": [
+        "titan"
+      ]
+    },
+    "titan-62477": {
+      "topicId": "titan",
+      "stats": {
+        "attack": 21,
+        "defense": 20,
+        "speed": 15,
+        "technique": 17
+      },
+      "ability": "Атакующий титан",
+      "form": "Без силы Прародителя",
+      "sources": [
+        "titan"
+      ]
+    },
+    "thrones-15607": {
+      "topicId": "thrones",
+      "stats": {
+        "attack": 22,
+        "defense": 22,
+        "speed": 21,
+        "technique": 23
+      },
+      "ability": "Меч, боевой опыт",
+      "form": "Длинный Коготь, без Призрака",
+      "sources": [
+        "thrones"
+      ]
+    },
+    "thrones-15611": {
+      "topicId": "thrones",
+      "stats": {
+        "attack": 6,
+        "defense": 11,
+        "speed": 8,
+        "technique": 12
+      },
+      "ability": "Огнестойкость",
+      "form": "Без драконов и армии",
+      "sources": [
+        "thrones"
+      ]
+    },
+    "thrones-15604": {
+      "topicId": "thrones",
+      "stats": {
+        "attack": 8,
+        "defense": 10,
+        "speed": 9,
+        "technique": 22
+      },
+      "ability": "Тактическая находчивость",
+      "form": "Без армии и дикого огня",
+      "sources": [
+        "thrones"
+      ]
+    },
+    "thrones-15613": {
+      "topicId": "thrones",
+      "stats": {
+        "attack": 21,
+        "defense": 16,
+        "speed": 25,
+        "technique": 24
+      },
+      "ability": "Скрытность, фехтование",
+      "form": "После обучения Безликих",
+      "sources": [
+        "thrones"
+      ]
+    },
+    "thrones-15608": {
+      "topicId": "thrones",
+      "stats": {
+        "attack": 5,
+        "defense": 7,
+        "speed": 7,
+        "technique": 14
+      },
+      "ability": "Интриги",
+      "form": "Без стражи и дикого огня",
+      "sources": [
+        "thrones"
+      ]
+    },
+    "thrones-15602": {
+      "topicId": "thrones",
+      "stats": {
+        "attack": 24,
+        "defense": 22,
+        "speed": 23,
+        "technique": 25
+      },
+      "ability": "Фехтование",
+      "form": "До потери руки",
+      "sources": [
+        "thrones"
+      ]
+    },
+    "thrones-15612": {
+      "topicId": "thrones",
+      "stats": {
+        "attack": 4,
+        "defense": 6,
+        "speed": 7,
+        "technique": 15
+      },
+      "ability": "Наблюдательность",
+      "form": "Без войска",
+      "sources": [
+        "thrones"
+      ]
+    },
+    "thrones-15601": {
+      "topicId": "thrones",
+      "stats": {
+        "attack": 21,
+        "defense": 20,
+        "speed": 19,
+        "technique": 22
+      },
+      "ability": "Меч, боевой опыт",
+      "form": "До ранения ноги",
+      "sources": [
+        "thrones"
+      ]
+    },
+    "thrones-15614": {
+      "topicId": "thrones",
+      "stats": {
+        "attack": 3,
+        "defense": 5,
+        "speed": 1,
+        "technique": 25
+      },
+      "ability": "Зеленовидение, варг",
+      "form": "Без Ходора и лютоволка",
+      "sources": [
+        "thrones"
+      ]
+    },
+    "thrones-15603": {
+      "topicId": "thrones",
+      "stats": {
+        "attack": 25,
+        "defense": 24,
+        "speed": 19,
+        "technique": 22
+      },
+      "ability": "Сила, тяжёлый меч",
+      "form": "До тяжёлых ранений",
+      "sources": [
+        "thrones"
+      ]
+    },
+    "thrones-15615": {
+      "topicId": "thrones",
+      "stats": {
+        "attack": 6,
+        "defense": 7,
+        "speed": 9,
+        "technique": 19
+      },
+      "ability": "Хитрость",
+      "form": "Без наёмников",
+      "sources": [
+        "thrones"
+      ]
+    },
+    "thrones-15605": {
+      "topicId": "thrones",
+      "stats": {
+        "attack": 8,
+        "defense": 7,
+        "speed": 9,
+        "technique": 7
+      },
+      "ability": "Арбалет",
+      "form": "Без стражи",
+      "sources": [
+        "thrones"
+      ]
+    },
+    "thrones-15609": {
+      "topicId": "thrones",
+      "stats": {
+        "attack": 20,
+        "defense": 20,
+        "speed": 20,
+        "technique": 23
+      },
+      "ability": "Меч, военная тактика",
+      "form": "Без войска и Серого Ветра",
+      "sources": [
+        "thrones"
+      ]
+    },
+    "thrones-15600": {
+      "topicId": "thrones",
+      "stats": {
+        "attack": 18,
+        "defense": 16,
+        "speed": 20,
+        "technique": 19
+      },
+      "ability": "Лук и меч",
+      "form": "До плена",
+      "sources": [
+        "thrones"
+      ]
+    },
+    "thrones-15596": {
+      "topicId": "thrones",
+      "stats": {
+        "attack": 13,
+        "defense": 13,
+        "speed": 10,
+        "technique": 23
+      },
+      "ability": "Военная тактика",
+      "form": "Без армии",
+      "sources": [
+        "thrones"
+      ]
+    },
+    "thrones-15618": {
+      "topicId": "thrones",
+      "stats": {
+        "attack": 24,
+        "defense": 24,
+        "speed": 20,
+        "technique": 24
+      },
+      "ability": "Меч, выносливость",
+      "form": "Верный Клятве",
+      "sources": [
+        "thrones"
+      ]
+    },
+    "thrones-15625": {
+      "topicId": "thrones",
+      "stats": {
+        "attack": 13,
+        "defense": 14,
+        "speed": 13,
+        "technique": 18
+      },
+      "ability": "Морской опыт",
+      "form": "Без флота",
+      "sources": [
+        "thrones"
+      ]
+    },
+    "thrones-15623": {
+      "topicId": "thrones",
+      "stats": {
+        "attack": 7,
+        "defense": 10,
+        "speed": 7,
+        "technique": 17
+      },
+      "ability": "Знания",
+      "form": "Личное оружие",
+      "sources": [
+        "thrones"
+      ]
+    },
+    "thrones-15606": {
+      "topicId": "thrones",
+      "stats": {
+        "attack": 22,
+        "defense": 22,
+        "speed": 18,
+        "technique": 22
+      },
+      "ability": "Рыцарская подготовка",
+      "form": "До тяжёлых ранений",
+      "sources": [
+        "thrones"
+      ]
+    },
+    "thrones-15619": {
+      "topicId": "thrones",
+      "stats": {
+        "attack": 19,
+        "defense": 17,
+        "speed": 20,
+        "technique": 19
+      },
+      "ability": "Лук, жестокие приёмы",
+      "form": "Без собак и войска",
+      "sources": [
+        "thrones"
+      ]
+    },
+    "thrones-15597": {
+      "topicId": "thrones",
+      "stats": {
+        "attack": 3,
+        "defense": 6,
+        "speed": 8,
+        "technique": 16
+      },
+      "ability": "Социальная проницательность",
+      "form": "Без стражи",
+      "sources": [
+        "thrones"
+      ]
+    },
+    "thrones-15629": {
+      "topicId": "thrones",
+      "stats": {
+        "attack": 20,
+        "defense": 20,
+        "speed": 17,
+        "technique": 23
+      },
+      "ability": "Меч, военная тактика",
+      "form": "До финального поражения",
+      "sources": [
+        "thrones"
+      ]
+    },
+    "thrones-15617": {
+      "topicId": "thrones",
+      "stats": {
+        "attack": 3,
+        "defense": 6,
+        "speed": 6,
+        "technique": 20
+      },
+      "ability": "Разведывательный опыт",
+      "form": "Без сети агентов",
+      "sources": [
+        "thrones"
+      ]
+    },
+    "thrones-15616": {
+      "topicId": "thrones",
+      "stats": {
+        "attack": 18,
+        "defense": 9,
+        "speed": 6,
+        "technique": 25
+      },
+      "ability": "Огненная магия",
+      "form": "Без ритуала с внешним донором",
+      "sources": [
+        "thrones"
+      ]
+    },
+    "jujutsu-127691": {
+      "topicId": "jujutsu",
+      "stats": {
+        "attack": 25,
+        "defense": 25,
+        "speed": 25,
+        "technique": 24
+      },
+      "ability": "Безграничность, Шесть глаз",
+      "form": "Синдзюку, без внешнего усиления",
+      "sources": [
+        "jujutsu",
+        "gojo"
+      ]
+    },
+    "jujutsu-127212": {
+      "topicId": "jujutsu",
+      "stats": {
+        "attack": 22,
+        "defense": 23,
+        "speed": 23,
+        "technique": 21
+      },
+      "ability": "Удары, кровь, Святилище",
+      "form": "Финал основной манги, без Сукуны",
+      "sources": [
+        "jujutsu"
+      ]
+    },
+    "jujutsu-126635": {
+      "topicId": "jujutsu",
+      "stats": {
+        "attack": 16,
+        "defense": 15,
+        "speed": 17,
+        "technique": 21
+      },
+      "ability": "Десять теней",
+      "form": "До одержимости, без Махораги",
+      "sources": [
+        "jujutsu"
+      ]
+    },
+    "jujutsu-133704": {
+      "topicId": "jujutsu",
+      "stats": {
+        "attack": 18,
+        "defense": 18,
+        "speed": 17,
+        "technique": 20
+      },
+      "ability": "Техника пропорций",
+      "form": "Сверхурочные",
+      "sources": [
+        "jujutsu"
+      ]
+    },
+    "jujutsu-133700": {
+      "topicId": "jujutsu",
+      "stats": {
+        "attack": 15,
+        "defense": 12,
+        "speed": 14,
+        "technique": 20
+      },
+      "ability": "Резонанс",
+      "form": "Основная манга",
+      "sources": [
+        "jujutsu"
+      ]
+    },
+    "jujutsu-134167": {
+      "topicId": "jujutsu",
+      "stats": {
+        "attack": 23,
+        "defense": 22,
+        "speed": 24,
+        "technique": 22
+      },
+      "ability": "Небесное ограничение",
+      "form": "Полное пробуждение",
+      "sources": [
+        "jujutsu"
+      ]
+    },
+    "jujutsu-133701": {
+      "topicId": "jujutsu",
+      "stats": {
+        "attack": 25,
+        "defense": 25,
+        "speed": 25,
+        "technique": 25
+      },
+      "ability": "Святилище, рассечение",
+      "form": "Истинное тело, без Десяти теней",
+      "sources": [
+        "jujutsu"
+      ]
+    },
+    "jujutsu-129571": {
+      "topicId": "jujutsu",
+      "stats": {
+        "attack": 23,
+        "defense": 24,
+        "speed": 22,
+        "technique": 25
+      },
+      "ability": "Копирование, Рика",
+      "form": "Собственное тело",
+      "sources": [
+        "jujutsu"
+      ]
+    },
+    "jujutsu-157115": {
+      "topicId": "jujutsu",
+      "stats": {
+        "attack": 15,
+        "defense": 12,
+        "speed": 15,
+        "technique": 21
+      },
+      "ability": "Проклятая речь",
+      "form": "До тяжёлых ранений",
+      "sources": [
+        "jujutsu"
+      ]
+    },
+    "jujutsu-133699": {
+      "topicId": "jujutsu",
+      "stats": {
+        "attack": 22,
+        "defense": 20,
+        "speed": 21,
+        "technique": 24
+      },
+      "ability": "Управление проклятиями",
+      "form": "JJK 0, не Кэндзяку",
+      "sources": [
+        "jujutsu"
+      ]
+    },
+    "jujutsu-162722": {
+      "topicId": "jujutsu",
+      "stats": {
+        "attack": 23,
+        "defense": 22,
+        "speed": 25,
+        "technique": 23
+      },
+      "ability": "Небесное ограничение",
+      "form": "Полный личный арсенал",
+      "sources": [
+        "jujutsu"
+      ]
+    },
+    "jujutsu-137975": {
+      "topicId": "jujutsu",
+      "stats": {
+        "attack": 18,
+        "defense": 19,
+        "speed": 20,
+        "technique": 23
+      },
+      "ability": "Буги-Вуги",
+      "form": "Обновлённая техника",
+      "sources": [
+        "jujutsu"
+      ]
+    },
+    "jujutsu-157116": {
+      "topicId": "jujutsu",
+      "stats": {
+        "attack": 19,
+        "defense": 19,
+        "speed": 18,
+        "technique": 21
+      },
+      "ability": "Управление кровью",
+      "form": "Основная манга",
+      "sources": [
+        "jujutsu"
+      ]
+    },
+    "jujutsu-133702": {
+      "topicId": "jujutsu",
+      "stats": {
+        "attack": 22,
+        "defense": 23,
+        "speed": 20,
+        "technique": 23
+      },
+      "ability": "Трансформация души",
+      "form": "Истинная форма",
+      "sources": [
+        "jujutsu"
+      ]
+    },
+    "jujutsu-156848": {
+      "topicId": "jujutsu",
+      "stats": {
+        "attack": 9,
+        "defense": 10,
+        "speed": 12,
+        "technique": 13
+      },
+      "ability": "Простая территория",
+      "form": "До связывающего обета",
+      "sources": [
+        "jujutsu"
+      ]
+    },
+    "jujutsu-137974": {
+      "topicId": "jujutsu",
+      "stats": {
+        "attack": 14,
+        "defense": 17,
+        "speed": 13,
+        "technique": 14
+      },
+      "ability": "Три ядра",
+      "form": "До потери ядер",
+      "sources": [
+        "jujutsu"
+      ]
+    },
+    "jujutsu-248818": {
+      "topicId": "jujutsu",
+      "stats": {
+        "attack": 20,
+        "defense": 17,
+        "speed": 16,
+        "technique": 24
+      },
+      "ability": "Судебная территория",
+      "form": "Синдзюку, приговор не гарантирован",
+      "sources": [
+        "jujutsu"
+      ]
+    },
+    "jujutsu-158154": {
+      "topicId": "jujutsu",
+      "stats": {
+        "attack": 3,
+        "defense": 7,
+        "speed": 8,
+        "technique": 23
+      },
+      "ability": "Обратная техника",
+      "form": "Врач поддержки",
+      "sources": [
+        "jujutsu"
+      ]
+    },
+    "jujutsu-197584": {
+      "topicId": "jujutsu",
+      "stats": {
+        "attack": 20,
+        "defense": 25,
+        "speed": 21,
+        "technique": 22
+      },
+      "ability": "Джекпот, регенерация",
+      "form": "Во время джекпота",
+      "sources": [
+        "jujutsu"
+      ]
+    },
+    "jujutsu-157215": {
+      "topicId": "jujutsu",
+      "stats": {
+        "attack": 19,
+        "defense": 15,
+        "speed": 18,
+        "technique": 21
+      },
+      "ability": "Контроль ворон",
+      "form": "Личный запас ворон",
+      "sources": [
+        "jujutsu"
+      ]
+    },
+    "jujutsu-157214": {
+      "topicId": "jujutsu",
+      "stats": {
+        "attack": 10,
+        "defense": 8,
+        "speed": 9,
+        "technique": 13
+      },
+      "ability": "Ядовитая медуза",
+      "form": "С сикигами",
+      "sources": [
+        "jujutsu"
+      ]
+    },
+    "jujutsu-157864": {
+      "topicId": "jujutsu",
+      "stats": {
+        "attack": 6,
+        "defense": 9,
+        "speed": 10,
+        "technique": 21
+      },
+      "ability": "Усиление союзников",
+      "form": "Ритуал усиления",
+      "sources": [
+        "jujutsu"
+      ]
+    },
+    "jujutsu-196502": {
+      "topicId": "jujutsu",
+      "stats": {
+        "attack": 25,
+        "defense": 21,
+        "speed": 21,
+        "technique": 23
+      },
+      "ability": "Виртуальная масса",
+      "form": "Без самоубийственной чёрной дыры",
+      "sources": [
+        "jujutsu"
+      ]
+    },
+    "jujutsu-134168": {
+      "topicId": "jujutsu",
+      "stats": {
+        "attack": 10,
+        "defense": 9,
+        "speed": 11,
+        "technique": 13
+      },
+      "ability": "Создание предметов",
+      "form": "Револьвер, обычный запас энергии",
+      "sources": [
+        "jujutsu"
+      ]
+    }
+  }
+}
